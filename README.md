@@ -101,10 +101,11 @@ My example instructions can be found in the `ExampleInstructions` folder in this
 
 The C# .NET 6.0 program is contained in the `FullClientInstallBuilder` folder in this repository.
 
-This program is very much hardcoded at the moment. It takes 3 arguments:
+This program is very much hardcoded at the moment. It takes 4 arguments:
 1) The directory path to turn into MPQs and install instructions
 2) The target directory to write to
-3) The split size, how many MB should be written to each Installer Tome MPQ
+3) The split size, how many MB should be written to each Installer Tome MPQ. Defaults to `2000` (2GB)
+4) The number of threads to use. Defaults to `4`
 
 It also contains a hardcoded Dictionary that automatically sets the install instructions to write to different MPQs based on the top level folder name. Note this structure is NOT Blizzlike in the slightest:
 ```csharp
