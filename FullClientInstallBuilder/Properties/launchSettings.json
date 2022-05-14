@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FullClientInstallBuilder": {
+      "commandName": "Project",
+      "commandLineArgs": "F:\\_NewProject\\FullClientExtract F:\\_NewProject\\LichKingInstaller\\test\\build 2000"
+    }
+  }
+}

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Wrath of the Lich King: Installer file list  -->
+
+<multipass_install>
+
+  <replace symbol="LaunchEXE"        with="Wow_HourOfTwilight.exe" />
+  <replace symbol="ExpManualData"        with="Manual_WLK.pdf" />
+
+  <!-- English localized text -->
+
+  <replace symbol="WoWShortcutName"		            with="World of Warcraft" />
+  <replace symbol="WoWShortcutTooltip"            with="Click here to play World of Warcraft: Wrath of the Lich King." />
+  <replace symbol="UninstallShortcutName"         with="World of Warcraft - Uninstall" />
+  <replace symbol="UninstallShortcutTooltip"      with="Click here to remove World of Warcraft: Wrath of the Lich King." />
+  <replace symbol="RepairShortcutName"            with="World of Warcraft - Repair" />
+  <replace symbol="RepairShortcutTooltip"         with="Click here to diagnose and repair problems running World of Warcraft: Wrath of the Lich King." />
+  <replace symbol="TOSShortcutName"               with="Read the Terms of Service" />
+  <replace symbol="TOSShortcutTooltip"            with="Click here to read the Terms of Service." />
+  <replace symbol="ReadMeShortcutName"            with="World of Warcraft Read Me" />
+  <replace symbol="ReadMeShortcutTooltip"         with="Click here to read the World of Warcraft: Wrath of the Lich King Read Me file." />
+  <replace symbol="ManualShortcutName"            with="World of Warcraft - Manual" />
+  <replace symbol="ManualShortcutTooltip"         with="Click here to read the manual for World of Warcraft." />
+  <replace symbol="ExpManualShortcutName"         with="Wrath of the Lich King - Manual" />
+  <replace symbol="ExpManualShortcutTooltip"      with="Click here to read the manual for World of Warcraft: Wrath of the Lich King." />
+  <replace symbol="TechSupportShortcutName"       with="Blizzard Technical Support" />
+  <replace symbol="TechSupportShortcutTooltip"    with="Click here to connect to the Blizzard Technical Support web site." />
+  <replace symbol="AccountBillingShortcutName"    with="Account Billing" />
+  <replace symbol="AccountBillingShortcutTooltip" with="Click here to connect to the Account Billing web site." />
+  <replace symbol="DeleteAllFiles"                with="Delete all files in the World of Warcraft folder" />
+  <replace symbol="AlreadyInstalled"              with="World of Warcraft: Wrath of the Lich King has already been installed." />
+  <replace symbol="SomeFilesWillBeDeleted"        with="This update will convert your existing World of Warcraft data to the latest format.  The update will remove any log files, options, macro definitions, and add-ons in your existing folders. If you wish to save these files, move them to a safe place before continuing this update." />
+
+  <replace symbol="ManualData"                    with="Manual.pdf" />
+
+  <!-- To ensure that we have enough space after installation to patch up and play successfully, we pad the size estimate by
+      500MB. That way, the user shouldn't be able to install if their hard drive would be 99.9% full after installation. -->
+  <pad_install_size megabytes="500" />
+
+  <!-- Warn users who have ELPs installed that some of their personal data (screenshots, etc.) will be deleted when those
+      ELP folders are migrated to the new data layout. -->
+  <if true_condition="CleanUpExistingInstall">
+    <!-- We don't touch these folders anymore
+    <if true_condition="has-deDE" or_true_condition1="has-enGB" or_true_condition2="has-esES" or_true_condition3="has-frFR" or_true_condition4="has-ruRU" or_true_condition5="has-enUS" or_true_condition6="has-zhTW" or_true_condition7="has-zhCN" or_true_condition8="has-koKR">
+      <warn message="{SomeFilesWillBeDeleted}" />
+    </if>
+    -->
+
+    <if true_condition="24xMigrationInstallLK" or_true_condition1="MigrationInstallLK">
+      <!-- For the 2.4.x to 3.0.0 patch, we check for the existence of all 2.x MPQs. -->
+      <must_exist type="file" path="{OriginalInstallPath}Data\common.MPQ" />
+      <must_exist type="file" path="{OriginalInstallPath}Data\{ProductLocaleCode}\locale-{ProductLocaleCode}.MPQ" />
+      <must_exist type="file" path="{OriginalInstallPath}Data\{ProductLocaleCode}\speech-{ProductLocaleCode}.MPQ" />
+      <if true_condition="BCInstalled">
+        <must_exist type="file" path="{OriginalInstallPath}Data\expansion.MPQ" />
+        <must_exist type="file" path="{OriginalInstallPath}Data\{ProductLocaleCode}\expansion-locale-{ProductLocaleCode}.MPQ" />
+      </if>
+    </if>
+  </if>
+
+<pass>
+
+<!-- Remove desktop shortcuts -->
+<target location="desktop">
+  <if true_condition="Win32"><then>
+    <delete type="file" path="{WoWShortcutName}.lnk" optional="1" />
+  </then><else>
+    <delete type="file" path="{WoWShortcutName}" optional="1" />
+    <!-- Special case the old shortcut name here for Macs -->
+    <delete type="file" path="World of Warcraft" optional="1" />
+  </else></if>
+</target>
+
+<!-- Remove StartMenu shortcuts -->
+<if true_condition="Win32">
+  <target location="start_menu">
+    <delete type="recursive_folder" path="" optional="1" />
+  </target>
+</if>
+
+<!-- Create the stock set of folders. -->
+<target location="user">
+  <create_folder path="" uninstall="recursive" option_message="{DeleteAllFiles}" conflict="overlay_folders" />
+  <create_folder path="Errors" uninstall="recursive" />
+  <create_folder path="Logs" uninstall="recursive" />
+  <create_folder path="WTF" uninstall="recursive" conflict="overlay_folders" />
+  <create_folder path="Interface" uninstall="recursive" conflict="overlay_folders" />
+
+  <if true_condition="install-enUS">
+    <create_folder path="Cache\WDB\enUS" uninstall="recursive" />
+  </if>
+  <if true_condition="install-enGB">
+    <create_folder path="Cache\WDB\enGB" uninstall="recursive" />
+  </if>
+</target>
+</pass>
+<replace symbol="Tome1" with="Installer Tome 1.mpq" />
+<replace symbol="Tome2" with="Installer Tome 2.mpq" />
+<replace symbol="Tome3" with="Installer Tome 3.mpq" />
+<replace symbol="Tome4" with="Installer Tome 4.mpq" />
+<replace symbol="Tome5" with="Installer Tome 5.mpq" />
+<replace symbol="Tome6" with="Installer Tome 6.mpq" />
+<replace symbol="Tome7" with="Installer Tome 7.mpq" />
+<replace symbol="Tome8" with="Installer Tome 8.mpq" />
+<replace symbol="Tome9" with="Installer Tome 9.mpq" />
+<replace symbol="Tome10" with="Installer Tome 10.mpq" />
+<replace symbol="Tome11" with="Installer Tome 11.mpq" />
+<replace symbol="Tome12" with="Installer Tome 12.mpq" />
+<replace symbol="Tome13" with="Installer Tome 13.mpq" />
+<replace symbol="Tome14" with="Installer Tome 14.mpq" />
+<replace symbol="Tome15" with="Installer Tome 15.mpq" />
+
+<pass>
+  <disc with_title="{DiscTitle1}" with_file="Movies.mpq" name="{DiscName1}">
+    <archive origin="disc" channel="0" path="Movies.mpq">
+      <target location="user">
+        <repack_into  type="file" conflict="replace">
+          <repack input0="{ProductLocaleCode}\Logo_800.avi"          to="Data\{ProductLocaleCode}\Interface\Cinematics\Logo_800.avi" size="4589568?" />
+          <repack input0="{ProductLocaleCode}\Logo_1024.avi"         to="Data\{ProductLocaleCode}\Interface\Cinematics\Logo_1024.avi" size="6506496?" />
+          <repack input0="{ProductLocaleCode}\WOW_Intro_800.avi"     to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_800.avi" size="41175040?" />
+          <repack input0="{ProductLocaleCode}\WOW_Intro_1024.avi"    to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_1024.avi" size="47632384?" />
+
+          <repack input0="{ProductLocaleCode}\WOW_Intro_BC_800.avi"  to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_BC_800.avi" size="41263104?" />
+          <repack input0="{ProductLocaleCode}\WOW_Intro_BC_1024.avi" to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_BC_1024.avi" size="47577088?" />
+          
+          <repack input0="{ProductLocaleCode}\WOW_Intro_LK_800.avi"  to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_LK_800.avi" size="48820376?" />
+          <repack input0="{ProductLocaleCode}\WOW_Intro_LK_1024.avi" to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Intro_LK_1024.avi" size="56177056?" />
+          
+          <repack input0="{ProductLocaleCode}\WOW_Wrathgate_800.avi" to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Wrathgate_800.avi" size="56177056?" />
+          <repack input0="{ProductLocaleCode}\WOW_Wrathgate_1024.avi"  to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_Wrathgate_1024.avi" size="48820376?" />
+
+          <repack input0="{ProductLocaleCode}\WOW_FotLK_800.avi" to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_FotLK_800.avi" size="56177056?" />
+          <repack input0="{ProductLocaleCode}\WOW_FotLK_1024.avi"  to="Data\{ProductLocaleCode}\Interface\Cinematics\WOW_FotLK_1024.avi" size="48820376?" />
+        </repack_into>
+      </target>
+    </archive>
+  </disc>
+</pass>
+
+<pass>
+  <disc with_title="{DiscTitle1}" with_file="{Tome1}" name="{DiscName1}">
+    <archive origin="disc" channel="0" path="{Tome1}">
+      <target location="uninstall">
+        <repack_into conflict="replace" uninstall="defer" type="file">
+            <repack input0="Uninstall.exe" to="Uninstall.exe" size="397312" />
+            <repack input0="msvcr71.dll" to="msvcr71.dll" size="348160" />
+            <repack input0="unicows.dll" to="unicows.dll" size="245408" />
+        </repack_into>
+      </target>
+      <target location="user">
+        <repack_into  type="file">
+            <repack input0="DivxDecoder.dll" to="DivxDecoder.dll" size="413696" />
+            <repack input0="Microsoft.VC80.CRT.manifest" to="Microsoft.VC80.CRT.manifest" size="1869" />
+            <repack input0="Scan.dll" to="Scan.dll" size="42244" />
+            <repack input0="Wow.exe" to="Wow.exe" size="7704216" />
+            <repack input0="WowError.exe" to="WowError.exe" size="220816" />
+            <repack input0="dbghelp.dll" to="dbghelp.dll" size="1039728" />
+            <repack input0="ijl15.dll" to="ijl15.dll" size="372736" />
+            <repack input0="msvcr80.dll" to="msvcr80.dll" size="626688" />
+            <repack input0="unicows.dll" to="unicows.dll" size="245408" />
+            <repack input0="Wow_HourOfTwilight.exe" to="Wow_HourOfTwilight.exe" size="7704216?" />
+        </repack_into>
+      </target>
+    </archive>
+  </disc>
+</pass>
+
+<pass>
+      
+<!-- PASTE CUSTOM BLOB HERE -->
+
+
+
+
+
+<!-- END PASTE CUSTOM BLOB HERE -->
+            
+</pass>
+
+<if true_condition="Win32"> 
+  <!--<install_directx minimum_version="00040009,00000387" version_string="9.0c" using_cd_title="{DiscTitle1}" cd_file="{Tome1}" cd_name="{DiscName1}" />-->
+</if>
+
+<!-- Create a shortcut on the desktop. -->
+<target location="desktop">
+  <source location="user">
+    <create_shortcut path="{LaunchEXE}" shortcut_name="{WoWShortcutName}" tooltip="{WoWShortcutTooltip}" is_desktop_shortcut="1" />
+  </source>
+</target>
+
+<!-- Create registry keys. Note that "target_alias" falls back to regular paths on non-MacOS platforms. -->
+<target location="user">
+  <registry_key where="machine" key_name="World of Warcraft" value_name="GamePath" target_alias="{LaunchEXE}" />
+  <registry_key where="machine" key_name="World of Warcraft" value_name="InstallPath" target_alias="" />
+</target>
+
+<!-- Finish up Win32 (Start Menu and Uninstall) -->
+<if true_condition="Win32">
+  <target location="uninstall">
+	  <registry_key where="machine" key_name="World of Warcraft" value_name="UninstallPath" target_path="Uninstall.exe" />
+  </target>	
+  <target location="start_menu">
+    <source location="user">
+      <create_shortcut path="{LaunchEXE}"                                             shortcut_name="{WoWShortcutName}"            tooltip="{WoWShortcutTooltip}" />
+      <!--
+      <create_shortcut path="Repair.exe"                                              shortcut_name="{RepairShortcutName}"         tooltip="{RepairShortcutTooltip}" />
+      <create_shortcut path="Data\{ProductLocaleCode}\Documentation\ReadMe.html"      shortcut_name="{ReadMeShortcutName}"         tooltip="{ReadMeShortcutTooltip}" />
+      <if false_condition="SimplifiedChinese">
+        <create_shortcut path="Data\{ProductLocaleCode}\Documentation\{ExpManualData}"  shortcut_name="{ExpManualShortcutName}"      tooltip="{ExpManualShortcutTooltip}" />
+      </if>
+      <create_shortcut path="Data\{ProductLocaleCode}\TechSupport.url"                shortcut_name="{TechSupportShortcutName}"    tooltip="{TechSupportShortcutTooltip}" />
+      <create_shortcut path="Data\{ProductLocaleCode}\AccountBilling.url"             shortcut_name="{AccountBillingShortcutName}" tooltip="{AccountBillingShortcutTooltip}" />
+      -->
+    </source>
+    <source location="uninstall">
+      <create_shortcut path="Uninstall.exe"                                           shortcut_name="{UninstallShortcutName}"      tooltip="{UninstallShortcutTooltip}" />
+    </source>
+  </target>
+  <target location="user">
+    <add_remove_programs product="{WoWShortcutName}" icon_path="Wow_HourOfTwilight.exe" uninstaller_path="Uninstall.exe" />
+  </target>
+  <target location="uninstall">
+    <create_uninstall_data path="Uninstall.xml" />
+  </target>
+</if>
+
+</multipass_install>
