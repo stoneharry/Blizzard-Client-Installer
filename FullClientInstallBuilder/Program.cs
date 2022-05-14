@@ -1,6 +1,4 @@
 ﻿
-using StormLibSharp;
-using System.Text;
 
 namespace FullClientInstallBuilder
 {
@@ -39,7 +37,8 @@ namespace FullClientInstallBuilder
 
             var sourceDir = args[0];
             var targetDir = args[1];
-            var splitSize = long.Parse(args[2]);
+            var splitSize = args.Length > 2 ? long.Parse(args[2]) : 2000L;
+            var numThreads = args.Length > 3 ? int.Parse(args[3]) : 4;
 
             sourceDir = sourceDir.EndsWith('\\') ? sourceDir : sourceDir + "\\";
             targetDir = targetDir.EndsWith('\\') ? targetDir : targetDir + "\\";
@@ -51,48 +50,14 @@ namespace FullClientInstallBuilder
 
             Console.WriteLine($"Found {fileList.Count} files.");
 
-            var instructionPath = targetDir + "Instructions.txt";
-            if (File.Exists(instructionPath))
-                File.Delete(instructionPath);
-
-            var index = 0;
-            var sizeWritten = 0L;
-            var archiveIndex = 2;
-            var archivePrefix = "Installer Tome ";
-            var archivePath = targetDir + archivePrefix + archiveIndex + ".mpq";
-            Console.WriteLine("Writing new MPQ: " + archivePath);
-            if (File.Exists(archivePath))
-                File.Delete(archivePath);
-            var archive = MpqArchive.CreateNew(archivePath, MpqArchiveVersion.Version1);
-            var pass = new MpqPass();
-            while (index < fileList.Count)
-            {
-                var entry = fileList[index++];
-                //Console.WriteLine($"Writing {entry}");
-                if ((index % 2000) == 0)
-                {
-                    var progress = Math.Round(((double)index / (double)fileList.Count) * 100d, 4);
-                    Console.WriteLine($"Progress: {progress}%");
-                }
-                pass.AddEntry(entry);
-                archive.AddFileFromDiskWithCompression(sourceDir + entry.Path, entry.Path, MpqCompressionTypeFlags.MPQ_COMPRESSION_ZLIB);
-                sizeWritten += entry.Size;
-                if (((sizeWritten / 1000) / 1000) >= splitSize)
-                {
-                    archive.Dispose();
-                    SaveInstructions(instructionPath, archivePrefix + archiveIndex + ".mpq", pass);
-                    sizeWritten = 0L;
-                    ++archiveIndex;
-                    archivePath = targetDir + archivePrefix + archiveIndex + ".mpq";  
-                    if (File.Exists(archivePath))
-                        File.Delete(archivePath);
-                    archive = MpqArchive.CreateNew(archivePath, MpqArchiveVersion.Version1);
-                    pass = new MpqPass();
-                    Console.WriteLine("Writing new MPQ: " + archivePath);
-                }
-            }
-            archive.Dispose();
-            SaveInstructions(instructionPath, archivePrefix + archiveIndex + ".mpq", pass);
+            new InstallManager()
+                .SourceDir(sourceDir)
+                .TargetDir(targetDir)
+                .SplitSize(splitSize)
+                .StartTomeIndex(2)
+                .PackageLookup(DirectoryPackageLookup)
+                .NumThreads(numThreads)
+                .RunInstall(fileList);
 
             Console.WriteLine("Done.");
         }
@@ -108,101 +73,6 @@ namespace FullClientInstallBuilder
                 var size = new FileInfo(file).Length;
                 var shortPath = file.Substring(rootDirLength);
                 fileList.Add(new FileEntry(shortPath, size));
-            }
-        }
-
-        static void SaveInstructions(string fileName, string tomeName, MpqPass pass)
-        {
-            var unmapped = pass.GetUnmappedFiles();
-            var mapped = pass.GetMappedDictionary();
-
-            var builder = new StringBuilder();
-
-            if (unmapped.Count > 0)
-            {
-                var mpqName = "Data\\common.MPQ";
-                var text = BuildInstallationDisc(tomeName, mpqName, unmapped);
-                builder.Append(text);
-            }
-
-            foreach (var group in mapped)
-            {
-                var key = group.Key;
-                var mpqName = "Data\\patch-common.mpq";
-                if (DirectoryPackageLookup.TryGetValue(group.Key, out string keyedMpq))
-                {
-                    mpqName = keyedMpq;
-                }
-                var text = BuildInstallationDisc(tomeName, mpqName, group.Value);
-                builder.Append(text);
-            }
-
-            File.AppendAllText(fileName, builder.ToString());
-        }
-
-        private static string BuildInstallationDisc(string tomeName, string mpqName, IEnumerable<FileEntry> entries)
-        {
-            var text = @$"
-<disc with_title=""{tomeName}"" with_file=""{tomeName}"" name=""{tomeName}"">
-    <archive origin=""disc"" channel=""0"" path=""{tomeName}"">
-        <target location=""user"">
-            <repack_into type=""mpq"" options=""type_and_creator/W!pqWoW!"" container=""{mpqName}"">
-{string.Join('\n', entries.Select(entry => entry.ConvertEntryToInstruction()))}
-            </repack_into>
-        </target>
-    </archive>
-</disc>
-            ";
-            return text.Replace("&", "&amp;");
-        }
-
-        class MpqPass
-        {
-            private readonly List<FileEntry> Files = new();
-
-            public void AddEntry(FileEntry entry)
-            {
-                Files.Add(entry);
-            }
-
-            public ILookup<string, FileEntry> GetMappedFiles()
-            {
-                return Files.Where(entry => entry.Path.Contains('\\'))
-                    .ToLookup(entry => entry.Path[..entry.Path.IndexOf('\\')]);
-            }
-
-            public Dictionary<string, List<FileEntry>> GetMappedDictionary()
-            {
-                return Files.Where(entry => entry.Path.Contains('\\'))
-                    .GroupBy(entry => entry.Path[..entry.Path.IndexOf('\\')])
-                    .ToDictionary(entry => entry.Key, entry => entry.ToList());
-            }
-
-            public List<FileEntry> GetUnmappedFiles()
-            {
-                return Files.Where(Files => !Files.Path.Contains('\\')).ToList();
-            }
-        }
-
-        class FileEntry
-        {
-            public readonly string Path;
-            public readonly long Size;
-
-            public FileEntry(string path, long size)
-            {
-                Path = path;
-                Size = size;
-            }
-
-            public string ConvertEntryToInstruction()
-            {
-                return $"<repack input0=\"{Path}\" to=\"{Path}\" size=\"{Size}\" />";
-            }
-
-            public override string ToString()
-            {
-                return $"FileEntry[{Path}, {Size}]";
             }
         }
     }
