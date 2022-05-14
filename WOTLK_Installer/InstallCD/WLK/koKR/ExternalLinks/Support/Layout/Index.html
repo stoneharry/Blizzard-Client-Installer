@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<title>월드 오브 워크래프트 온라인 도움말</title>
+</head>
+<frameset title="World of Warcraft Online Help" rows="171,*,32" framespacing="0" border="false" frameborder="0">
+	<frame name="TopBorder" src="Layout/TBorder.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="no">
+	<frameset cols="12,250,35,*,13" framespacing="0" border="false" frameborder="0">
+		<frame name="Left" src="Layout/LBorder.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="no">
+		<frame name="Topic" src="ReadMe/(PC)ReadMeMenu.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="yes">
+		<frame name="CSpacer" src="Layout/CSpacer.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="no">
+		<frame name="content" src="ReadMe/(PC)Foreword.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="yes">
+		<frame name="Right" src="Layout/RBorder.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="no">
+	</frameset>
+	<frame name="BSpacer" src="Layout/BSpacer.html" frameborder="0" marginheight="0" marginwidth="0" noresize="true" scrolling="no">
+</frameset>
+<script language="javascript">
+var Platform = "PC";
+
+    if (navigator.userAgent.indexOf('Mac') != -1)
+    {
+        Platform = "Mac";
+        document.Topic.location = "ReadMe/(Mac)ReadMeMenu.html";
+        document.content.location = "ReadMe/(Mac)Foreword.html";
+    }
+</script>
+</html>

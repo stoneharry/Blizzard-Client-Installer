@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcdkey>
+###
+###  Localized strings for platform specific code
+###
+Upgrade                             Modificar
+UpgradeAnother                      Modificar otra
+IntroTitle                          ¿Quieres convertir tu cuenta de World of Warcraft en una de Burning Crusade?
+IntroDiscussion1                    Haz clic en Modificar y luego escribe la información de tu cuenta de World of Warcraft y tu clave de autentificación de Burning Crusade.
+IntroDiscussion2                    Si ya has modificado tu cuenta o si no quieres hacerlo en este momento, haz clic en Saltar. Para jugar a Burning Crusade debes modificar tu cuenta.
+DataEntryTitle                      Escribe la información de tu cuenta World of Warcraft y tu clave de autentificación de Burning Crusade.
+AccountLabel                        Cuenta:
+PasswordLabel                       Contraseña:
+KeyLabel                            Clave:
+DontShareKeys                       No compartas tu clave de autentificación. Esta clave de autentificación solo sirve para modificar una cuenta.
+UpgradeInProgressTitle              Estamos modificando tu cuenta.
+UpgradeSuccessfulTitle              Tu cuenta se ha modificado.
+UpgradeFailedTitle                  No se ha podido modificar tu cuenta.
+###
+###  Localized strings for cross-platform code
+###
+ConnectingToBlizzard                Conectando con Blizzard...
+UpgradingAccount                    Modificando cuenta...
+InvalidKey                          Esta clave de autentificación no es válida.
+InvalidAccount                      Cuenta o contraseña no válida.
+AlreadyUpgraded                     Esta cuenta ya se ha modificado.
+AccountIneligible                   Esta cuenta no se puede modificar.
+ServiceUnavailable                  El servidor no puede procesar tu solicitud en este momento. Inténtalo de nuevo más tarde.
+UpgradeSuccessful                   Se ha modificado la cuenta.
+ServerError                         Error de servidor:
+UnableToConnect                     Es imposible conectarse. 
+###
+###  Data for cross-platform code
+###
+AccountRegistrationURL              https://upgrade.worldofwarcraft.com/expansion/installer/upgradeAccount.xml?accountName={Account}&amp;accountPassword={Password}&amp;key={Key}
+CheckAccountRegistrationURL         https://upgrade.worldofwarcraft.com/expansion/installer/status01.xml
+</netcdkey>

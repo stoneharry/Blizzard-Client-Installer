@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+	
+	<!-- Display the product specific logo. -->
+	<static_text image="Images/logo.mng" label="" position="248,0" />
+	
+	<static_text label="{DisplayedInstallerVersion}" align="center" position="72,542" size="10" color="FFD823" />
+</page>

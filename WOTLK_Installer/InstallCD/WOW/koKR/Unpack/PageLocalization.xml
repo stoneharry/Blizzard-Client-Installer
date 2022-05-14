@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      월드 오브 워크래프트 설치 프로그램
+
+Font                                          2002.TTF
+LanguageCode                                  Korean
+
+UnableToInstall                               설치 오류
+YouNeedToBeAnAdminUser                        월드 오브 워크래프트를 설치하려면 관리자 권한이 있어야 합니다.
+ClickHereForMoreInformation                   자세한 정보를 보려면 여기를 클릭하십시오(|I|)
+
+NewerOperatingSystem1                         월드 오브 워크래프트는 현재 사용 중인 운영
+NewerOperatingSystem2                         체제에는 설치할 수 없습니다.
+WindowsRequiredOS                             Windows 98, ME, 2000 또는 XP에만 설치할 수 있습니다.
+MacOSXRequiredOS                              Mac OS X 10.3.9 또는 상위 버전이 필요합니다.
+
+RestartRequired                               시스템 다시 시작
+YouNeedToRestart1                             월드 오브 워크래프트를 실행하려면 먼저
+YouNeedToRestart2                             시스템을 다시 시작해야 합니다.
+
+FailedMinSpec1                                사용하시는 컴퓨터가 최소 요구
+FailedMinSpec2                                사항을 만족하지 못합니다.
+NotEnoughRAM                                  메모리 요구 사항 미달 (자세히)
+TooSlowCPU                                    CPU 요구 사항 미달 (자세히)
+InstallAnyway                                 계속 설치 진행 (|I|)
+
+ViewTheReadme                                 정보 파일 보기(|R|)
+ViewTheManual                                 사용자 매뉴얼 보기(|M|)
+TechnicalSupport                              고객센터(|T|)
+ExitInstaller                                 설치 프로그램 종료(|X|)
+InstallWorldOfWarcraft                        월드 오브 워크래프트 설치(|W|)
+PlayWorldOfWarcraft                           월드 오브 워크래프트 시작(|W|)
+Uninstall                                     제거(|U|)
+ManualData                                    Support/Manual.pdf
+
+InstallationComplete                          설치가 완료되었습니다!
+CreateAnAccount1                              월드 오브 워크래프트를 처음 시작하시는 분은 계정을 만들어야 게임을
+CreateAnAccount2                              즐기실 수 있습니다. 아래 버튼을 클릭하여 새 계정을 만드시기 바랍니다.
+CreateYourAccount                             계정 만들기 (|C|)
+CreateYourAccountURL                          http://www.worldofwarcraft.co.kr/account/
+HaveAnAccountAlready1                         이미 계정이 있으신 분은 아래 버튼을 클릭하여 월드 오브 워크래프트를
+HaveAnAccountAlready2                         실행하실 수 있습니다.
+Back                                          뒤로(|B|)
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

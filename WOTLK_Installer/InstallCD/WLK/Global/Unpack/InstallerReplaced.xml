@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Contains all the user interface for downloading and restarting with a new
+	replacement installer.
+-->
+<page title="{WorldOfWarcraftInstaller}" font="{Font}" backdrop="Images/ReplacingInstaller.jpg" color_over="ffffff" color_down="FF0000" >
+
+<if true_condition="ReplacementInstallerAvailable"><then>
+
+	<!-- TODO: Add a progress bar for slow downloaders. -->
+	<!--
+		<progress_bar position="103,322"  image="Images/bar-empty.png" image_progress="Images/bar-full.png"/>
+		<percent_text size="{PercentTextSize}" position="370,326" color="FFFFFF"/>
+		<progress_text size="{ProgressTextSize}" position="180,359" color="FFFFFF"/>
+	-->
+
+	<!-- Users can cancel the download -->
+	<exit_button label="{Cancel}" hotkey="*" size="14" escape="1" position="595,511" 
+		color="FFD823" text_depress="1,2" fade=".3, .3, 0, 1"
+		image="Images/smallbutton-off.png"
+		mouse_over="Images/smallbutton-over.png"
+		mouse_down="Images/smallbutton-down.png" />
+
+	<!-- There's no way off this page because the code will restart the 
+	     Installer once the download is complete. -->
+	
+</then><else>
+
+	<!-- In case we get here by accident -->
+	<overlay page="MainPageAnim.xml" /> 
+
+</else></if>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      Instalador de World of Warcraft: The Burning Crusade
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  LatinAmericanSpanish
+
+UnableToInstall                               No se puede realizar la instalación
+YouNeedToBeAnAdminUser                        Para instalar The Burning Crusade debes contar con permisos de administrador.
+ClickHereForMoreInformation                   Haz clic aquí para obtener más |i|nformación
+NewerOperatingSystem1                         Para jugar a The Burning Crusade necesitas utilizar un sistema
+NewerOperatingSystem2                         operativo más reciente.
+WindowsRequiredOS                             Se necesita Windows 2000, XP o superior.
+MacOSXRequiredOS                              Se necesita Mac OS X 10.3.9 o superior.
+
+WrongLocale1                                  Esta versión de The Burning Crusade solo es compatible con la
+WrongLocale2                                  versión en español de World of Warcraft. 
+
+RestartRequired                               Debes reiniciar el ordenador
+YouNeedToRestart1                             Reinicia tu ordenador antes de jugar a
+YouNeedToRestart2                             The Burning Crusade.
+
+FailedMinSpec1                                Tu ordenador no cumple con los
+FailedMinSpec2                                requisitos mínimos recomendados.
+NotEnoughRAM                                  No tienes suficiente memoria RAM (saber más)
+TooSlowCPU                                    Velocidad insuficiente de CPU (saber más)
+InstallAnyway                                 |I|nstalar igualmente
+
+ViewTheReadme                                 Ver el archivo |L|éeme
+ViewTheManual                                 Ver el |M|anual
+TechnicalSupport                              Asistencia té|c|nica
+ExitInstaller                                 Salir |d|el Instalador
+InstallWorldOfWarcraft                        Instalar |B|urning Crusade
+PlayWorldOfWarcraft                           Jugar a |B|urning Crusade
+Uninstall                                     D|e|sinstalar
+ManualData                                    Support/Manual.pdf
+
+InstallationComplete                          ¡Instalación completada! 
+UpdateAnAccount1                              Si no has modificado tu cuenta de World of Warcraft, haz clic en el botón
+UpdateAnAccount2                              que se encuentra abajo. Debes modificar tu cuenta para registrarte y jugar. 
+UpdateYourAccount                             |M|odifica tu cuenta 
+UpdateYourAccountURL                          http://www.worldofwarcraft.com/burningcrusade/upgrade
+HaveAnAccountAlready1                         Si ya has modificado tu cuenta, haz clic en el botón 
+HaveAnAccountAlready2                         que se encuentra abajo para iniciar Burning Crusade. 
+
+Back                                          |A|trás
+Cancel                                        Cancelar
+
+WoWRequired1                                  Necesitas World of Warcraft
+WoWRequired2                                  Instala World of Warcraft antes de instalar The Burning Crusade
+BuyWoW                                        C|o|mprar World of Warcraft en línea
+BuyWoWURL                                     http://www.worldofwarcraft.com/buy
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

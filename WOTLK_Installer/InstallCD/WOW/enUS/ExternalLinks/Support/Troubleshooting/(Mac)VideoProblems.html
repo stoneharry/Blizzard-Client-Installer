@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World of Warcraft: Wrath of the Lich King Online Help</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue">
+			Video Problems (Mac)
+		</a>		
+        <p>Most video errors are rooted in software and settings. If you are experiencing a problem that is not listed below, or the steps listed do not resolve the problem, please   
+        <a href="../Support/(Mac)TechnicalSupport.html" class="menubox_header_white">contact Technical Support</a>.
+        </p>
+
+        <p><font class="small_header_blue">1. Gameplay is slow or choppy:&nbsp;</font> The primary means of improving your game performance is through adjustments to the in-game graphical settings. Changing to a lower configuration can increase the speed and smoothness of the game at a cost of visual quality. You may want to spend some time experimenting with different settings finding the best visual quality for an acceptable game speed.</p>
+        <p>Some settings can be adjusted through the Video Options menu by pressing the Esc key while in the game. Settings can also be adjusted from outside the game via the Config.wtf file.  
+
+        <ul>
+            <li> Open the World of Warcraft folder on your hard drive.
+            <li> Open the WTF folder.
+            <li> Open the Config.wtf file using a text editor. 
+        </ul>
+        
+        <p>These settings were intended to allow advanced users the ability to customize the performance of the game. To quickly increase performance speed, try adding or editing some of the following instructions.</p>
+        
+        <ul>
+            <div class="pad">
+            <font class="small_header_blue">SET lod "1"</font> 
+            <br>Toggles terrain level of detail (LOD) on "1" and off "0". Enabling this feature allows the game to draw fewer details near the horizon, increasing performance.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET lodDist "100"</font>
+            <br>Sets the distance at which the terrain level of detail (LOD) change occurs. 100 is conservative, but you might reduce this number as low as 50 for performance. LodDist only functions when LOD is "1". 
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET doodadAnim "0"</font> 
+            <br>Setting this to "1" will enable environment animations, such as windmills and birds. Some areas of the game have many animated objects, so leaving this set to 0 can significantly improve performance in those areas.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET mapShadows "0"</font> 
+            <br>Turns display of terrain shadows off ("1" turns them back on). This will improve game speed slightly. 
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET anisotropic "1"</font> 
+            <br>Can be set from 1 (off) to 16. Disabling this feature will significantly improve frame rates on video cards that do not support anisotropic filtering.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET farclip "477.0"</font> 
+            <br>This matches the FarClip slider bar in the Video Options menu. The range is 177 to 1177. This setting has a small impact on performance.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET pixelShaders "0"</font> 
+            <br>Enabling pixelShaders allows the world to be rendered in fewer passes, potentially increasing performance on cards that support them. You may want to test the speed of the game with this setting either on ("1") or off ("0"). This is currently disabled in all Macintosh versions of the game.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET specular "0"</font>
+            <br>Specular cannot be used without pixelShaders set to "1". This option enables specular highlighting on certain terrain textures, giving a shiny, reflective look to some objects. Enabling specularity ("1") introduces a slight performance hit.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET fullAlpha "0"</font>
+            <br>As many cards do not currently support this feature, it is recommended that you disable this function by setting this to "0".
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET MaxLights "1"</font> 
+            <br>Can be set from 1 to 4. Many video cards handle multiple lights fine, but those that do not will enjoy significant speed increases by lowering this number.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET gxVSync "0"</font> 
+            <br>This disables vertical synchronization, which will allow some vertical "tearing". Setting it to 1 will lower game speed but improve visual quality.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET frillDensity "1"</font> 
+            <br>This can be set between 1(off) and 128. The higher this number is, the greater the environmental detail (grass, rocks, etc.). Increased detail decreases performance.
+        </ul>
+
+        <p><font class="small_header_blue">2. Game textures shimmer, flicker, or are distorted:&nbsp;</font> Some video cards may experience problems displaying certain texturing effects while you are playing. Graphic issues may include the following: shimmering colors across static textures, solid green or white blocky textures, missing geometry, or missing textures. 
+
+        <p> To resolve these problems, turn specularity and pixelShaders to "0"
+        <ul>
+            <li> Open the World of Warcraft folder on your hard drive.
+            <li> Open the WTF folder.
+            <li> Open the Config.wtf file using a text editor.
+            <li> Change SET specular "1" to SET specular "0".
+            <li> Change SET pixelShaders "1" to SET pixelShaders "0".
+            <li> Save the file and start World of Warcraft: Wrath of the Lich King again. 
+        </ul>
+        <p><font class="small_header_blue">3. Graphical settings are corrupted or not set properly:&nbsp;</font> You can restore your game settings back to default at any time by deleting the Config.wtf file. This file is located in your World of Warcraft directory inside the WTF folder. A new Config.wtf file will be created the next time the game is run. Game settings that have been changed during the latest game session will not be fully updated until you exit the game. </p>
+
+</body>
+</html>

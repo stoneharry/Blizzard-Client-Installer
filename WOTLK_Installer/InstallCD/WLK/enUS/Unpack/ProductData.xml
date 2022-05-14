@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product_data>
+ProductLocaleCode                  enUS
+ProductName                        Wrath of the Lich King
+StartMenuFolderName                World of Warcraft
+LogFileName                        Logs/Wrath of the Lich King Install Log
+OriginalInstallPathRegistryKey     World of Warcraft/InstallPath
+BaseInstallRegistryKey             World of Warcraft/InstallPath
+BaseUninstallRegistryKey           World of Warcraft/UninstallPath
+WinVista_SuggestedRAM              1024
+Win32_SuggestedRAM                 512
+MacOS_SuggestedRAM                 1024
+Intel_SuggestedMHz                 1300
+PowerPC_SuggestedMHz               1600
+WinNT_SupportedOS                  5,0         # NT4:4,0  2K:5,0   XP:5,1
+MacOS_SupportedOS                  10,3,9     # XX,Y,ZZ = XX.Y.ZZ
+CanCreateDesktopShortcut           1
+MustInstallInExistingFolder        0
+#MacOS_BaseInstallLocation         # using the default value
+#Win32_BaseInstallLocation         # using the default value
+MacOS_InstallerData                Wrath of the Lich King Disc 1:Wrath of the Lich King Disc 1:Installer Tome.mpq
+Win32_InstallerData                Wrath of the Lich King Disc 1:LKDisc1:Installer Tome.mpq
+AppendToInstallLocation            World of Warcraft
+ProgressBarInMainWindow            1
+ProductType                        WoW
+ReplacementInstallerURL            http://us.installers.blizzard.com/installer/%s/%d.%s.txt
+InstallingWebPage                  http://upgrade.worldofwarcraft.com/installer/
+</product_data>

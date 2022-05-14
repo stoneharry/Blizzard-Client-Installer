@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      World of Warcraft: The Burning Crusade Installer
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  English
+
+UnableToInstall                               Unable to Install
+YouNeedToBeAnAdminUser                        You need to be an admin user to install Burning Crusade.
+ClickHereForMoreInformation                   Click here for more |i|nformation
+NewerOperatingSystem1                         Burning Crusade requires a newer operating system to run.
+NewerOperatingSystem2                         
+WindowsRequiredOS                             Windows 2000, XP or newer is required.
+MacOSXRequiredOS                              Mac OS X 10.3.9 or later is required.
+
+WrongLocale1                                  This version of The Burning Crusade is only compatible with
+WrongLocale2                                  the English (US) version of World of Warcraft.
+
+RestartRequired                               Restart Required
+YouNeedToRestart1                             You need to restart your computer before
+YouNeedToRestart2                             playing Burning Crusade.
+
+FailedMinSpec1                                Your computer fails to meet the
+FailedMinSpec2                                minimum system requirements.
+NotEnoughRAM                                  Not enough RAM (learn more)
+TooSlowCPU                                    Insufficient CPU Speed (learn more)
+InstallAnyway                                 |I|nstall Anyway
+
+ViewTheReadme                                 View the |R|eadme
+ViewTheManual                                 View the |M|anual
+TechnicalSupport                              |C|ustomer Support
+ExitInstaller                                 E|x|it Installer
+InstallWorldOfWarcraft                        Install |B|urning Crusade
+PlayWorldOfWarcraft                           |P|lay Burning Crusade
+Uninstall                                     |U|ninstall
+ManualData                                    Support/Manual.pdf
+
+InstallationComplete                          Installation Complete!
+UpdateAnAccount1                              If you haven't upgraded your World of Warcraft account, click the 
+UpdateAnAccount2                              button below. Your account must be upgraded to login and play.
+UpdateYourAccount                             |U|pgrade Your Account
+UpdateYourAccountURL                          http://www.worldofwarcraft.com/burningcrusade/upgrade
+HaveAnAccountAlready1                         If your account has already been upgraded, click the button below
+HaveAnAccountAlready2                         to launch Burning Crusade.
+
+Back                                          |B|ack
+Cancel                                        Cancel
+
+WoWRequired1                                  World of Warcraft Required
+WoWRequired2                                  Please install World of Warcraft before installing The Burning Crusade
+BuyWoW                                        |B|uy World of Warcraft Online
+BuyWoWURL                                     http://www.worldofwarcraft.com/buy
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

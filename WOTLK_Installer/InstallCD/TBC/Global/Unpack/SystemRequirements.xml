@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft main installer page -->
+
+<page backdrop="Images/TechSupportBackdrop.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+	<static_text image="Images/techsupport-overlay.png" position="0,0" />
+	<static_text image="Images/alert.png" position="151,173" />
+	
+	<static_text label="{FailedMinSpec1}" position="214,178" size="18" color="ffffff" />
+	<static_text label="{FailedMinSpec2}" position="214,198" size="18" color="ffffff" />
+	
+	<if false_condition="EnoughRAM">
+ 	  <file_link   label="{NotEnoughRAM}" data="Support/SystemRequirements.html" size="14" position="228,240" color="FFD823"/>
+	  <static_text image="Images/bullet.png" position="208,242" />
+	</if>
+	
+	<if false_condition="EnoughCPU">
+	  <file_link   label="{TooSlowCPU}" data="Support/SystemRequirements.html" size="14" position="228,265" color="FFD823"/>
+	  <static_text image="Images/bullet.png" position="208,267" />
+	</if>	
+	
+	<page_link   label="{InstallAnyway}" hotkey="*" data="MainPage.xml" position="145,350" color="FFD823" image="Images/exit-off.png" 	mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" />
+	<exit_button label="{ExitInstaller}" hotkey="*" escape="1" position="325,350" color="FFD823" image="Images/exit-off.png" 			mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" />
+
+	<static_text image="Images/wowlogo.png" position="193,15" fade=".05, .3, 0, 1"/>
+	
+</page>

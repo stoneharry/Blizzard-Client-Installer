@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization>
+UnableToStartUp	죄송합니다. 설치 프로그램을 시작할 수 없습니다.
+UnableToLoadData	죄송합니다. 설치 프로그램이 필요한 파일을 불러오지 못했습니다.
+UnableToOpenURL	죄송합니다. 설치 프로그램이 해당 URL을 열지 못했습니다.
+ContactTechSupport	문제가 지속될 경우 블리자드 기술 지원팀에 연락 하십시오.
+ErrorVerifying%sonDisk%s	"%1$s" 파일의 내용을 검증하는 과정에서 오류가 발견되었습니다. 시스템 또는 %2$s 드라이브에 오류가 있을 수 있습니다. 다시 한번 설치를 시도해 보시기 바랍니다.
+%sExpectedVersion%d.%d.%d.%dOrNewerButYouHave%d.%d.%d.%d   The installer requires "%1$s" version %2$d.%3$d.%4$d.%5$d or later. You have an older version, %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dOrOlderButYouHave%d.%d.%d.%d   The installer does not need to be applied. It requires a version of "%1$s" older than %2$d.%3$d.%4$d.%5$d, but you already have version %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dOrNewer                        The installer requires "%1$s" version %2$d.%3$d.%4$d.%5$d or later.
+WaitingForFileClose	파일 종료 대기 중...
+FilesMustBeClosed	모든 파일을 닫아야 설치를 진행할 수 있습니다.
+RequiredFile%sMissing	"%1$s" 파일이 필요하지만 대상 디렉터리에 있지 않습니다.
+RequiredFolder%sMissing	"%1$s" 폴더가 필요하지만 대상 디렉터리에 있지 않습니다.
+CannotInstallInSystemDirectory	시스템 디렉터리이므로 여기에는 설치할 수 없습니다. 다른 곳에 설치해 주십시오.
+%sAlreadyInstalled	이미 %1$s이(가) 설치되어 있습니다. 다른 곳에 설치해 주십시오.
+CouldntCreateFolder%s	"%1$s" 폴더를 만들 수 없습니다.
+CouldntCreateFile%s	"%1$s" 파일을 만들 수 없습니다.
+CouldntOpenFile	파일을 열 수 없습니다.
+CouldntOpenFile%s	"%1$s" 파일을 열 수 없습니다.
+CouldntOpenURL%s	URL "%1$s"을(를) 열 수 없습니다. 웹 브라우저 주소 창에 직접 주소를 입력해 보십시오.
+CouldntCreateShortcut%s	"%1$s" 파일의 바로 가기를 생성하지 못했습니다.
+CouldntRename%sTo%s	"%1$s"의 이름을 "%2$s"(으)로 변경할 수 없습니다.
+CouldntGetReadWritePermissionFor%s	"%s" 파일이 잠겨 있거나 현재 사용 중이어서 삭제하지 못했습니다.
+CantInstall%sOnCaseSensitiveVolume	대소문자를 구별하는 드라이브에는 %s을(를) 설치할 수 없습니다.
+File%sIsReadOnly	"%1$s" 파일은 읽기 전용이므로 덮어쓸 수 없습니다. 다른 곳에 설치해 주십시오.
+File%sWillBeOverwritten	%1$s 파일을 덮어씁니다.
+FolderContentsWillBeErased	해당 폴더의 모든 내용이 삭제될 것입니다.
+File%sAlreadyExists	"%1$s" 파일이 이미 존재합니다.
+Folder%sAlreadyExists	"%1$s" 폴더가 이미 존재합니다.
+File%sAlreadyOpenedAs%s	%1$s 파일을 열 수 없습니다. 이미 "%2$s"(으)로 열려 있습니다.
+File%sNotFound	"%1$s" 파일을 찾을 수 없습니다.
+Folder%sNotFound	"%1$s" 폴더를 찾을 수 없습니다.
+File%sIsOver4GB	"%1$s" 파일의 크기가 4GB 이상입니다. 인식이 불가능합니다.
+Error%dOpening%s	오류 %1$d 때문에 "%2$s" 파일을 열 수 없습니다. 
+Error%dOpening%sInArchive%s	오류 %1$d 때문에 "%3$s"에 압축되어 있는 "%2$s" 파일을 열 수 없습니다.
+Error%dClosing%s	오류 %1$d 때문에 "%2$s" 파일을 닫을 수 없습니다.
+Error%dCreating%sWith%dBytes	오류 %1$d 때문에 "%2$s"(%3$d바이트) 파일을 만들 수 없습니다.
+Error%sCreating%sWith%dBytes	다음 오류로 인해 "%2$s"(%3$d바이트) 파일을 만들 수 없습니다: %1$d
+Error%dGettingSizeOf%s	오류 %1$d 때문에 "%2$s" 파일의 크기를 읽을 수 없습니다.
+ErrorReading%s	"%1$s" 파일을 읽을 수 없습니다.
+Error%dReading%s	오류 %1$d 때문에 "%2$s" 파일을 읽을 수 없습니다.
+ErrorWriting%s	"%1$s" 파일을 쓸 수 없습니다.
+Error%dWriting%s	오류 %1$d 때문에 "%2$s" 파일을 쓸 수 없습니다. 
+ErrorDeletingFile%s	"%1$s" 파일을 삭제할 수 없습니다.
+ErrorDeletingFolder%s	"%1$s" 폴더를 삭제할 수 없습니다.
+ErrorApplyingPatch%s	"%1$s" 패치를 적용할 수 없습니다.
+File%sIsCorrupt	"%1$s" 파일이 손상된 것 같습니다.
+TryDownloadingAgain	해당 파일을 다시 다운로드해야합니다.
+ErrorRemovingRegistryKey%s%s	"Blizzard Entertainment\%1$s\%2$s" 레지스트리 키를 삭제할 수 없습니다.
+MediaError%dReading%sin%sonDisk%s	설치 프로그램이 "%3$s" 파일을 읽을 수 없습니다. 이 오류는 %4$s의 CD-ROM/DVD-ROM의 오염 또는 흠집으로 인한 미디어 오류이거나 하드 드라이브 오류 또는 파일 다운로드 중에 발생한 네트워크 문제로 인한 것일 수 있습니다. (대상 파일은 "%2$s"이며 오류 코드는 %1$d입니다.)
+MediaError%dReading%sonDisk%s	설치 프로그램이 "%2$s" 파일을 읽을 수 없습니다. 이 오류는 %3$s의 CD-ROM/DVD-ROM의 오염 또는 흠집으로 인한 미디어 오류이거나 하드 드라이브 오류 또는 파일 다운로드 중에 발생한 네트워크 문제로 인한 것일 수 있습니다. (오류 코드는 %1$d입니다.)
+IncorrectInformation	정보가 올바르지 않습니다.
+PathTooLong	파일 경로가 너무 깁니다. 좀 더 짧은 경로명으로 바꿔보십시오.
+CouldntCreateRegistryKey%s%s	"Blizzard Entertainment\%1$s\%2$s" 레지스트리 키를 생성할 수 없습니다.
+Installing%sTo%sOn%s	"%2$s" 폴더의 %1$s을(를) 위한 파일 설치 (%3$s)
+InstalledFile%s	"%1$s" 파일을 생성했습니다.
+InstalledFolder%s	"%1$s" 폴더를 생성했습니다.
+CreatedShortcut%s	"%1$s" 바로 가기를 생성했습니다.
+MovedFile%sTo%s	"%1$s" 파일을 "%2$s" 경로로 이동했습니다.
+DeletedFile%s	"%1$s" 파일을 삭제했습니다.
+DeletedFolder%s	"%1$s" 폴더를 삭제했습니다.
+InstallSuccessful	설치가 완료되었습니다.
+FilesMayBeLeftBehind	설치가 중단되었습니다. 하지만 하드 디스크에 일부 파일이 복사되었을 수 있습니다.
+ErrorInstallingDirectX	DirectX를 설치하는 도중에 오류가 발생했습니다.
+DiskHas%sButNeeds%sToInstall%s	하드 디스크에 %3$s 설치를 위한 공간이 충분하지 않습니다. %2$s의 공간이 필요하지만 현재 %1$s의 공간 밖에 남아 있지 않습니다. 공간을 충분히 확보한 후 설치하거나 다른 디스크에 설치하십시오.
+CertainDiskHas%sButNeeds%sToInstall%s	하드 디스크에 %3$s 설치를 위한 공간이 충분하지 않습니다. %2$s의 공간이 필요하지만 현재 %1$s의 공간 밖에 남아 있지 않습니다. 공간을 충분히 확보하시기 바랍니다.
+DiskIsTooFullFor%s	%1$s를 설치하기 위한 여유 공간이 부족합니다. 하드 여유 공간을 확보하시기 바랍니다.
+EndUserLicenseAgreement	최종 사용자 사용권 계약
+ScrollToEnd	(이 계약 내용을 읽으십시오. 끝까지 읽어 내려 가면 [동의] 단추가 활성화됩니다.)
+ConfirmAgreement	위의 내용에 동의하십니까?
+Agree	동의(&amp;A)
+Disagree	동의 안 함(&amp;D)
+Stop	중지
+Installer	설치 프로그램
+Error	오류
+Warning	경고
+PreparingToInstall	설치 준비 중...
+Installing%s	"%1$s" 설치 중...
+CleaningUp	지우는 중...
+InstallerCouldntInitialize	죄송합니다. 설치 프로그램을 초기화할 수 없습니다.
+InstallFailed	죄송합니다. 설치가 실패하였습니다.
+ConflictWarning	설치에 문제가 있을 수 있습니다. 그래도 계속 진행하시겠습니까?
+InstalledWithWarnings	다음 경고 메시지와 함께 설치가 완료되었습니다:
+InstallCanceled	설치가 취소되었습니다.
+PleaseInsertCD%s	"%1$s" CD를 CD-ROM 드라이브에 넣으십시오.
+Back	뒤로(&amp;B)
+Cancel	취소(&amp;C)
+Install	설치(&amp;I)
+Next	다음(&amp;N)
+OK	확인(&amp;O)
+Choose	선택(&amp;C)
+SelectFolder	폴더 선택(&amp;F)
+%.1fMB	%1$.1fMB
+%.1fGB	%1$.1fGB
+CDKeyTitle	CD키
+EnterGameOwnerName	게임을 구매하신 분의 성함을 입력하십시오.
+EnterGameCDKey%dFromCase	CD 케이스에 있는 %1$d자로 된 CD키를 입력하십시오.
+EnterAuthenticationKey%d	%1$d자로 된 인증키를 입력하십시오.
+DontShareCDKeys	CD키를 다른 사람과 공유하지 마십시오. 주어진 CD키로는 동시에 한 명만 접속할 수 있습니다.
+DontShareAuthenticationKeys	인증키를 다른 사람과 공유하지 마십시오. 계정이 차단되거나 캐릭터가 삭제될 수 있습니다.
+InvalidUserName	올바른 이름을 입력하십시오. 사용자 이름은 15자 이상 입력할 수 없습니다.
+InvalidCDKeyFor%s	%1$s란에 입력하신 CD키가 올바르지 않습니다. 제대로 입력했는지 확인해 주십시오.
+InvalidAuthenticationKey	죄송합니다. 입력하신 인증키가 올바르지 않습니다. 제대로 입력했는지 확인해 주십시오.
+Name	이름:
+%sCDKey	%1$s CD키:
+AuthenticationKey	인증키:
+AboutToUninstall%s	%1$s을(를) 제거하려면 "제거"를 클릭하십시오.
+BrokenExtensionHintPDF	이 파일을 보려면 Adobe Reader를 설치하셔야 합니다. 자세한 정보는 http://www.adobe.com/kr/products/acrobat/readstep2.html에서 참고하실 수 있습니다.
+UninstallFilesLeftBehindWarning	제거 후에 일부 파일이 남아있을 수 있습니다. 제거를 계속 진행하시겠습니까?
+Uninstaller	제거 프로그램
+Uninstall	제거(&amp;U)
+Uninstalling	제거 중...
+Uninstalled%s	%1$s이(가) 제거되었습니다.
+UninstallWarning	다음 경고와 함께 제거가 완료되었습니다:
+Skip	건너뛰기
+TryAgain	다시 시도
+Linux_PathPrompt	%1$s의 설치 경로를 입력하십시오.(%2$s의 공간 필요)
+Win32_DirectX%sRequiredFor%s	올바른 버전의 DirectX가 설치되어 있지 않습니다. %2$s의 실행을 위해서는 DirectX %1$s 버전이 필요합니다. DirectX를 지금 설치하시겠습니까?
+Win32_YesInstallDirectX	예. DirectX를 설치합니다(&amp;Y).
+Win32_NoButContinueInstall	아니요. 하지만 설치는 계속합니다(&amp;N).
+Win32_CancelInstall	설치 취소(&amp;C)
+Win32_InvalidDirectory	오류: 잘못된 디렉터리를 선택했습니다.
+Win32_NotEnoughSpace	오류: 이 드라이브에 공간이 부족합니다. 
+Win32_DirectoryDoesNotExist	오류: 해당 디렉터리는 존재하지 않습니다. 
+Win32_DirectoryExists	경고: 이미 존재하는 디렉터리입니다.
+Win32_DirectoryNonEmpty	경고: 이미 존재하는 디렉터리이고 비어 있지 않습니다.
+Win32_SpaceAvailable	여유 공간:
+Win32_SpaceRequired	필요 공간:
+Win32_InstallTerminated	설치 종료:
+Win32_CouldNotCreateAddRemoveProgramsEntry%s	제어판의 프로그램 추가/제거에 "%1$s" 항목을 생성할 수 없습니다.
+Win32_CouldNotRemoveAddRemoveProgramsEntry%s	제어판의 프로그램 추가/제어에서 "%1$s" 항목을 제거할 수 없습니다.
+Win32_RestartRequired	재시작 필요
+Win32_SuccessfulInstall%sRestartMessage	%1$s의 실행을 위해서 컴퓨터를 다시 시작해야합니다. 지금 다시 시작하시겠습니까?
+Win32_GenericRestartMessage	설치한 소프트웨어를 사용하려면 컴퓨터를 다시 시작해야 합니다. 지금 다시 시작하시겠습니까?
+Win32_CreateShortcutOnDesktop	바탕 화면에 바로 가기 만들기
+Win32_PleaseChooseDirectory	설치할 디렉터리 선택:
+Win32_RestoreDefault	원래대로(&amp;R)
+Win32_InstallationDestinationDirectory	설치 대상 경로
+MacOS_%sWillBeInstalledInto	%1$s 설치 위치:
+MacOS_AvailableDiskSpace	여유 공간:
+MacOS_InstallationSize	설치 용량:
+PauseGoogleDesktopSearch	블리자드 제품을 설치할 때 Google 데스크톱 검색 기능을 사용하면 문제가 발생할 수 있습니다. 설치하기 전에 Google 데스크톱 검색을 중지하거나 닫으십시오. 자세한 내용은 http://desktop.google.co.kr/support/를 참조해 주십시오.
+</localization>	

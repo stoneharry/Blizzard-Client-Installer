@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft Install Complete page -->
+
+<page backdrop="Images/CompletedBackdrop.jpg" font="{Font}" color_over="ffffff" color_down="FF0000">
+	
+	<!-- After we've installed, launch the Launcher automatically so we can begin patching -->
+	<launch_app_on_page_load 	data="World of Warcraft/GamePath" />
+
+	<static_text image="Images/techsupport-overlay.png"   position="0,0" fade=".05, .3, 0, 1" />	
+	<static_text image="Images/wowlogo.png"               position="189,16" fade=".04, .3, 0, 1" />
+
+	<static_text          label="{InstallationComplete}" size="26"                                                       position="140,125" color="FFFFFF" fade=".06, .3, 0, 1" />
+
+	<static_text          label="{CreateAnAccount1}" size="12"                                                           position="140,160" color="C0C0C0" fade=".07, .3, 0, 1" />
+	<static_text          label="{CreateAnAccount2}" size="12"                                                           position="140,175" color="C0C0C0" fade=".07, .3, 0, 1" />	
+
+	<url_link             label="{CreateYourAccount}" size="26"           data="{CreateYourAccountURL}"     hotkey="*"   position="137,200" color="FFD823" image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png"  text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1"/>	
+	
+	<static_text          label="{HaveAnAccountAlready1}" size="12"                                                      position="140,270" color="C0C0C0" fade=".07, .3, 0, 1" />			
+	<static_text          label="{HaveAnAccountAlready2}" size="12"                                                      position="140,285" color="C0C0C0" fade=".07, .3, 0, 1" />				
+	
+	<launch_app_and_quit  label="{PlayWorldOfWarcraft}" size="26"         data="World of Warcraft/GamePath" hotkey="*"   position="137,315" color="FFD823" image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png"  text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1"/>	
+	
+	<page_link            label="{Back}" size="18"                        data="MainPage.xml"               hotkey="*"   position="16,423"  color="FFD823" escape="1" image="Images/back-off.png" mouse_over="Images/back-over.png" mouse_down="Images/back-down.png" text_offset="5,-2" text_depress="1,2" />
+	
+</page>

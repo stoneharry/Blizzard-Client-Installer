@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+    
+	<if true_condition="EnoughRAM" and_true_condition1="EnoughCPU" or_true_condition2="Installed"><then>
+	
+		<!-- All System Requirements are met, or the game has already been installed, so 
+		     continue to the main screen. --> 
+		<overlay page="MainPage.xml" />
+		
+	</then><else>
+		
+		<!-- We don't meet all the System Requirements... -->
+		<if false_condition="IsAdmin" or_false_condition1="SupportedOS"><then>
+
+			<!-- ... but we can't install at all, so there's no reason to list the System Requirements. -->
+			<overlay page="MainPage.xml" />
+
+		</then><else>
+
+			<!-- ... so show the System Requirements page before going to the main screen. --> 
+			<overlay page="SystemRequirements.xml" />
+			
+		</else></if>
+	</else></if>
+	
+</page>

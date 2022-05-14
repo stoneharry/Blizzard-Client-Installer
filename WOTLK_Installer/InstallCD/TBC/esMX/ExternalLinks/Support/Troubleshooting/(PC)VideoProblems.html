@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>Ayuda en l&iacute;nea de World of Warcraft: Wrath of the Lich King</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue">
+			Problemas de imagen (PC)
+		</a>		
+        <p>La mayor&iacute;a de los problemas de imagen se deben a los programas y a sus configuraciones. Si experimentas un problema que no est&aacute; listado abajo, o los pasos listados no resuelven el problema, contacta al departamento de 
+        <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">soporte t&eacute;cnico</a>.
+        </p>
+
+        <p><font class="small_header_blue">1. La experiencia de juego es lenta o entrecortada:&nbsp;</font> la principal manera de mejorar el rendimiento del juego es a trav&eacute;s de los ajustes de las propiedades gr&aacute;ficas dentro del juego. Cambiar a una configuraci&oacute;n m&aacute;s baja puede aumentar la velocidad y la suavidad del juego a costa de calidad visual. Posiblemente quieras invertir algo de tiempo en experimentar con diferentes ajustes para encontrar la mejor calidad visual para una velocidad de juego aceptable.</p>
+        <p>Algunas propiedades se pueden ajustar utilizando el men&uacute; Opciones de V&iacute;deo pulsando la tecla Esc mientras est&aacute;s en el juego. Las propiedades tambi&eacute;n se pueden ajustar desde fuera del juego utilizando el archivo Config.wtf.  
+
+        <ul>
+            <li> Abre el directorio de World of Warcraft: Wrath of the Lich King de tu disco duro.
+            <li> Abre la carpeta WTF.
+            <li> Abre el archivo Config.wtf usando un editor de texto, como Bloc de notas. 
+        </ul>
+        
+        <p>Estas propiedades est&aacute;n ideadas para permitir a usuarios avanzados la habilidad de personalizar el rendimiento del juego. Para r&aacute;pidamente incrementar la velocidad de rendimiento, prueba algunas o todas de las siguientes instrucciones.</p>
+        
+        <ul>
+            <div class="pad">
+            <font class="small_header_blue">SET lod "1"</font> 
+            <br>Cambia el nivel de detalle del terreno (LOD), encendido "1" y apagado "0". Habilitar esta caracter&iacute;stica permite al juego dibujar menos detalles cerca del horizonte, aumentando el rendimiento.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET lodDist "100"</font>
+            <br>Ajusta la distancia a la que el nivel de detalle del terreno (LOD) ocurre. 100 es conservador, pero quiz&aacute;s quieras reducir este n&uacute;mero a 50 para mejorar el rendimiento. LodDist solo funciona cuando LOD est&aacute; a "1" pero puedes reducir el valor hasta 50 para aumentar el rendimiento. 
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET doodadAnim "0"</font> 
+            <br>Configurando esto a "1" activar&aacute;s las animaciones ambientales, como los molinos de viento y los p&aacute;jaros. Algunas &aacute;reas del juego tienen demasiados objetos animados, por lo que dejando esta opci&oacute;n a 0 puedes aumentar significativamente el rendimiento en dichas &aacute;reas.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET mapShadows "0"</font> 
+            <br>Desactiva la visualizaci&oacute;n de sombras del terreno ("1" las vuelve a activar). Esto mejorar&aacute; la velocidad del juego sensiblemente. 
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET anisotropic "1"</font> 
+            <br>Puede ajustarse de 1 (off) a 16. Deshabilitar esta caracter&iacute;stica mejorar&aacute; significativamente el n&uacute;mero de cuadros por segundo en las tarjetas gr&aacute;ficas que no soporten filtrado antisotr&oacute;pico.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET farclip "477.0"</font> 
+            <br>Esto concuerda con la barra de desplazamiento de FarClip del men&uacute; de opciones de v&iacute;deo. El rango es de 177 a 1177. Esta caracter&iacute;stica tiene un peque&ntilde;o impacto sobre el rendimiento.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET pixelShaders "0"</font> 
+            <br>Activar pixelShaders permite que el mundo sea renderizado cada pocos pasos, potencialmente incrementa el rendimiento en tarjetas que soportan este tipo de opciones. Quiz&aacute; quieras probar la velocidad del juego con esta opci&oacute;n tanto activada ("1") como desactivada ("0"). Est&aacute; actualmente deshabilitada para todas las versiones Macintosh del juego.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET specular "0"</font>
+            <br>Specular no se puede usar sin pixelShaders puesto a "1". Esta opci&oacute;n activa el realce de ciertas texturas del terreno, dando una brillante y reflectante visi&oacute;n a algunos objetos. Activar la especularidad ("1") introduce una ligera disminuci&oacute;n del rendimiento.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET fullAlpha "0"</font>
+            <br>Como muchas tarjetas no soportan esta opci&oacute;n, es recomendable que desactives esta funci&oacute;n poniéndola a "0".
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET MaxLights "1"</font> 
+            <br>Puede ser desde 1 a 4. Muchas tarjetas de v&iacute;deo pueden soportar m&uacute;ltiples luces bien, pero aquellas que no experimentar&aacute;n un aumento de la velocidad reduciendo este n&uacute;mero.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET gxVSync "0"</font> 
+            <br>Esto desactiva la sincronizaci&oacute;n vertical, que permitir&aacute; alg&uacute;n desgarr&oacute;n vertical. Coloc&aacute;ndolo a 1 disminuir&aacute; la velocidad del juego pero aumentara la calidad visual.
+            </div>
+            
+            <div class="pad">
+            <font class="small_header_blue">SET frillDensity "1"</font> 
+            <br>Se puede configurar entre 1 (apagado) y 128. M&aacute;s alto sea el n&uacute;mero, mayor es el detalle del entorno (hierba, piedras, etc.) Un mayor detalle disminuye el rendimiento.
+        </ul>
+        <p>Otra manera de mejorar el rendimiento en un PC es ajustar la apertura AGP de la tarjeta de v&iacute;deo (si est&aacute; disponible). La norma general es tener la apertura colocada al doble (x2) de la cantidad de memoria de v&iacute;deo de la tarjeta gr&aacute;fica. Por lo que si tienes una tarjeta gr&aacute;fica de 64MB, configura la apertura AGP a 128. Puedes ajustar esta cantidad m&aacute;s adelante si es necesario. Nota: Este es un paso m&aacute;s avanzado. Blizzard Entertainment no te puede proporcionar instrucciones para configurar la apertura AGP de una tarjeta gr&aacute;fica. Contacta al fabricante de tu computadora o tarjeta gr&aacute;fica para obtener m&aacute;s ayuda.</p>
+
+        <p><font class="small_header_blue">2. La experiencia de juego es lenta o entrecortada en las ciudades:&nbsp;</font> si est&aacute;s experimentando un n&uacute;mero de cuadros por segundo muy pobre cuando entra en grandes &aacute;reas de las ciudades, por favor intente cambiar el m&eacute;todo de renderizado entre "OpenGL" y "Direct 3D".
+        <ul>
+            <li> Abre el directorio de World of Warcraft de tu disco duro. 
+            <li> Abre la carpeta WTF.
+            <li> Abre el archivo Config.wtf usando un editor de texto, como Bloc de notas.
+            <li> Elije SET gxApi "opengl" o SET gxApi "direct3d"
+            <li> Guarda el fichero e inicia World of Warcraft: Wrath of the Lich King de nuevo. 
+        </ul>
+        
+        <p><font class="small_header_blue">3. Las texturas del juego brillan, parpadean o est&aacute;n deformadas:&nbsp;</font> algunas tarjetas gr&aacute;ficas pueden experimentar problemas mostrando ciertos efectos de texturas mientras est&aacute; jugando. Algunos de estos problemas gr&aacute;ficos pueden incluir lo siguiente: brillos de colores a trav&eacute;s de texturas, texturas que bloquean de un verde s&oacute;lido o blanco, geometr&iacute;a que falta o texturas que no est&aacute;n. 
+
+        <p> Para resolver estos problemas, pon la specularity y pixelShaders a "0"
+        <ul>
+            <li> Abre el directorio de World of Warcraft de tu disco duro. 
+            <li> Abre la carpeta WTF.
+            <li> Abre el archivo Config.wtf usando un editor de texto, como Bloc de notas.
+            <li> Cambia SET specular "1" a SET specular "0".
+            <li> Cambia SET pixelShaders "1" a SET pixelShaders "0".
+            <li> Guarda el fichero e inicia World of Warcraft: Wrath of the Lich King de nuevo. 
+        </ul>
+        <p><font class="small_header_blue">4. Las propiedades gr&aacute;ficas est&aacute;n corruptas o no se configuran adecuadamente:&nbsp;</font> puedes restaurar las opciones por defecto en cualquier momento borrando el archivo Config.wtf. Este archivo está situado en tu directorio de World of Warcraft dentro de la carpeta WTF. Un nuevo archivo Config.wtf se crear&aacute; la pr&oacute;xima vez que ejecute el juego. Las configuraciones del juego que cambiaron durante la &uacute;ltima sesi&oacute;n de juego no estar&aacute;n completamente actualizadas hasta que no salga del juego.</p>
+
+</body>
+</html>

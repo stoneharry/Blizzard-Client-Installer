@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+	<static_text image="Images/wowlogo.png" position="189,16" fade=".05, .3, 0, 1"/>
+    <static_text label="{DisplayedInstallerVersion}" align="center" position="74,454" size="10" color="FFD823" />
+	<static_text label="{DisplayedInstallerVersion}" align="center" position="72,542" size="10" color="FFD823" />
+</page>

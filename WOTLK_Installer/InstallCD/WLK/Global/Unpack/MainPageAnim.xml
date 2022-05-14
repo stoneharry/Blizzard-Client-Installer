@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft main installer page -->
+
+<page backdrop="Images/background.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+<if true_condition="ReplacementInstallerAvaiable" ><then>
+	<overlay page="InstallerReplaced.xml" />
+</then><else>
+
+	<!-- Bottom layer animating widgets -->
+	<overlay page="Header.xml" />
+	
+	<!-- Show the "not an admin" widget -->
+	<if false_condition="IsAdmin"><then>
+		
+		<static_text image="Images/warning-overlay.png" position="400,100" align="center" fade=".05, .3, 0, 1"/>
+		
+		<static_text    label="{UnableToInstall}"                                                           size="30"               position="400,140" align="center" color="FFFFFF" fade=".1, .3, 0, 1" />
+		<static_text    label="{YouNeedToBeAnAdminUser}"                                                    size="{YouNeedToBeAnAdminUserSize}"               position="400,186" align="center" color="FFD823" fade=".1, .3, 0, 1" />
+		<file_link         data="Support/AdminUser.html"   hotkey="*"  size="17"               position="400,216" align="center" color="FFD823" fade=".1, .3, 0, 1" image="Images/infobutton-off.png" mouse_over="Images/infobutton-over.png" mouse_down="Images/infobutton-down.png" text_offset="0,-2" text_depress="2,3"/>
+		
+		<file_link      				    data="Support/ReadMe.html"  	hotkey="*"	size="14"        		position="400,302" align="center" color="FFD823" image="Images/readme2wotlk-off.png" 		mouse_over="Images/readme2wotlk-over.png" 		mouse_down="Images/readme2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".15, .3, 0, 1"		  />
+		<file_link      				    data="{ManualData}" 	hotkey="*"	size="14"          		position="400,344" align="center" color="FFD823" image="Images/manual2wotlk-off.png" 		mouse_over="Images/manual2wotlk-over.png" 		mouse_down="Images/manual2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".2, .3, 0, 1"		  />
+		<url_link      			    	data="{TechSupportLink}"     		hotkey="*"	size="14"         		position="400,384" align="center" color="FFD823" image="Images/support2wotlk-off.png"		mouse_over="Images/support2wotlk-over.png"		mouse_down="Images/support2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".25, .3, 0, 1"		  />
+		<exit_button                                            		    hotkey="*"	size="14"	escape="1" 	position="400,424" align="center" color="FFD823" image="Images/exit2wotlk-off.png"		mouse_over="Images/exit2wotlk-over.png" 		mouse_down="Images/exit2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".3, .3, 0, 1"		  />
+		
+	</then><else>
+		
+		<!-- Show the "unsupported OS" widget -->
+		<if false_condition="SupportedOS"><then>
+			
+			<static_text image="Images/warning-overlay.png" position="400,100" align="center" fade=".05, .3, 0, 1"/>
+			
+			<static_text label="{UnableToInstall}"                            size="{UnableToInstallSize}" position="400,140" align="center" color="FFFFFF" fade=".1, .3, 0, 1" />
+			<static_text label="{NewerOperatingSystem1}"   		              size="{NewerOperatingSystem1Size}" position="400,195" color="FFD823" fade=".1, .3, 0, 1" align="center"/>
+			<static_text label="{NewerOperatingSystem2}"   		              size="{NewerOperatingSystem2Size}" position="400,215" color="FFD823" fade=".1, .3, 0, 1" align="center"/>
+			
+			<file_link      				    data="Support/ReadMe.html"  	hotkey="*"	size="14"        		position="400,302" align="center" color="FFD823" image="Images/readme2wotlk-off.png" 		mouse_over="Images/readme2wotlk-over.png" 		mouse_down="Images/readme2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".15, .3, 0, 1"		  />
+			<file_link      				    data="{ManualData}" 	hotkey="*"	size="14"          		position="400,344" align="center" color="FFD823" image="Images/manual2wotlk-off.png" 		mouse_over="Images/manual2wotlk-over.png" 		mouse_down="Images/manual2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".2, .3, 0, 1"		  />
+			<url_link      			    	data="{TechSupportLink}"     		hotkey="*"	size="14"         		position="400,384" align="center" color="FFD823" image="Images/support2wotlk-off.png"		mouse_over="Images/support2wotlk-over.png"		mouse_down="Images/support2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".25, .3, 0, 1"		  />
+			<exit_button                                            		    hotkey="*"	size="14"	escape="1" 	position="400,424" align="center" color="FFD823" image="Images/exit2wotlk-off.png"		mouse_over="Images/exit2wotlk-over.png" 			mouse_down="Images/exit2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".3, .3, 0, 1"		  />
+			
+			<if true_condition="Win32"><then>
+				<static_text label="{WindowsRequiredOS}" size="{WindowsRequiredOSSize}" position="400,240" align="center" color="FFD823" fade=".1, .3, 0, 1"/>		
+			</then></if>
+			
+			<if true_condition="MacOS"><then>
+				<static_text label="{MacOSXRequiredOS}" size="{MacOSXRequiredOSSize}" position="400,240" align="center" color="FFD823" fade=".1, .3, 0, 1"/>		
+			</then></if>
+			
+		</then><else>
+			
+			<!-- Show the "wrong locale" widget -->
+			<if true_condition="WoWWrongLocale"><then>
+				
+				<static_text image="Images/warning-overlay.png" position="400,117" align="center" />	
+				<static_text label="{UnableToInstall}"	size="{UnableToInstallSize}" position="400,140" color="FFFFFF" align="center" />
+				<static_text label="{WrongLocale1}"	size="{WrongLocale1Size}" position="400,195" color="FFD823" align="center" />
+				<static_text label="{WrongLocale2}"	size="{WrongLocale2Size}" position="400,215" color="FFD823" align="center" />
+				
+				<file_link      				    data="Support/ReadMe.html"  	hotkey="*"	size="14"        		position="400,302" align="center" color="FFD823" image="Images/readme2wotlk-off.png" 		mouse_over="Images/readme2wotlk-over.png" 		mouse_down="Images/readme2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".15, .3, 0, 1"		  />
+				<file_link      				    data="{ManualData}" 	hotkey="*"	size="14"          		position="400,344" align="center" color="FFD823" image="Images/manual2wotlk-off.png" 		mouse_over="Images/manual2wotlk-over.png" 		mouse_down="Images/manual2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".2, .3, 0, 1"		  />
+				<url_link      			    	data="{TechSupportLink}"     		hotkey="*"	size="14"         		position="400,384" align="center" color="FFD823" image="Images/support2wotlk-off.png"		mouse_over="Images/support2wotlk-over.png"		mouse_down="Images/support2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".25, .3, 0, 1"		  />
+				<exit_button                                            		    hotkey="*"	size="14"	escape="1" 	position="400,424" align="center" color="FFD823" image="Images/exit2wotlk-off.png"		mouse_over="Images/exit2wotlk-over.png" 			mouse_down="Images/exit2wotlk-down.png" text_offset="0,-3"		text_depress="1,2" fade=".3, .3, 0, 1"		  />
+				
+			</then><else>
+				
+				<!-- Check to see if Wrath of the Lich King is installed -->
+				<if true_condition="LKInstalled"><then>
+					
+					<!-- Animate the main menu -->
+					<static_text image="Images/play.mng" label="" position="38,53" />
+					
+					<!-- Fade in the actual buttons once the animation is complete, allowing the user to click to start the game -->
+					<launch_app_and_quit 	data="World of Warcraft/GamePath" 	hotkey="*"	size="24"               position="81,190" 	color="FFD823" image="Images/playwotlk-off.png" 		mouse_over="Images/playwotlk-over.png" 		mouse_down="Images/playwotlk-down.png"  	    text_offset="0,0" 	text_depress="2,3" 	fade="2, 1, 0, 1"		  />
+					<file_link			    data="Support/ReadMe.html"  		hotkey="*"	size="14"               position="105,244" 	color="FFD823" image="Images/readmewotlk-off.png" 	mouse_over="Images/readmewotlk-over.png" 	    mouse_down="Images/readmewotlk-down.png" 	    text_offset="0,0"	text_depress="1,2" 	fade="2, 1, 0, 1"		  />
+					<file_link			    data="{ManualData}"		hotkey="*"	size="14"               position="105,286" 	color="FFD823" image="Images/manualwotlk-off.png" 	mouse_over="Images/manualwotlk-over.png" 	    mouse_down="Images/manualwotlk-down.png" 	    text_offset="0,0"	text_depress="1,2" 	fade="2, 1, 0, 1"		  />
+					<url_link			    data="{TechSupportLink}"  	        hotkey="*"	size="14"               position="105,327" 	color="FFD823" image="Images/supportwotlk-off.png"	mouse_over="Images/supportwotlk-over.png"	    mouse_down="Images/supportwotlk-down.png" 	text_offset="0,0"	text_depress="1,2" 	fade="2, 1, 0, 1"		  />
+					<exit_button										        hotkey="*"	size="14"   escape="1" 	position="105,369" 	color="FFD823" image="Images/exitwotlk-off.png"		mouse_over="Images/exitwotlk-over.png" 		mouse_down="Images/exitwotlk-down.png" 		text_offset="1,0"	text_depress="1,2" 	fade="2, 1, 0, 1"		  />
+					
+					<!-- Allow the user to uninstall in Win32 -->
+					<if true_condition="Win32"><then>
+						<launch_app_and_wait label="{Uninstall}" data="World of Warcraft/UninstallPath" hotkey="*"  size="14" color="FFD823" color_down="8BD2F9" image="Images/smallbutton-off.png" 			mouse_over="Images/smallbutton-over.png" 			mouse_down="Images/smallbutton-down.png" text_offset="0,0" text_depress="1,2" fade=".25, .3, 0, 1" position="615,530" /> <!-- 566,480 -->
+					</then></if>
+					
+				</then><else>
+					<!-- Check to see if WoW:tBC is installed. -->
+					<!-- <if true_condition="BCInstalled"><then> -->
+						<!-- tBC is installed. Show "Install". -->
+						
+						<!-- Animate the main menu -->
+						<static_text image="Images/install.mng" label="" position="38,53" />
+						
+						<overlay page="InstallbuttonAnim.xml" />
+						<!-- <page_link 		data="LangSelection.xml" hotkey="*" size="24" position="81,190" color="FFD823" image="Images/installwotlk-off.png" mouse_over="Images/installwotlk-over.png" mouse_down="Images/installwotlk-down.png" text_offset="1,-1" text_depress="2,3" fade="2, 1, 0, 1" /> -->
+						<file_link			data="Support/ReadMe.html"  	hotkey="*"	size="14"        		position="105,244" color="FFD823" image="Images/readmewotlk-off.png" 		mouse_over="Images/readmewotlk-over.png" 		mouse_down="Images/readmewotlk-down.png" text_offset="0,0"		text_depress="1,2" fade="2, 1, 0, 1" />
+						<file_link			data="{ManualData}"	hotkey="*"	size="14"          		position="105,286" color="FFD823" image="Images/manualwotlk-off.png" 		mouse_over="Images/manualwotlk-over.png" 		mouse_down="Images/manualwotlk-down.png" text_offset="0,0"		text_depress="1,2" fade="2, 1, 0, 1" />
+						<url_link			data="{TechSupportLink}"     		hotkey="*"	size="14"         		position="105,327" color="FFD823" image="Images/supportwotlk-off.png"		mouse_over="Images/supportwotlk-over.png"		mouse_down="Images/supportwotlk-down.png" text_offset="0,0"		text_depress="1,2" fade="2, 1, 0, 1"/>
+						<exit_button										hotkey="*"	size="14"	escape="1" 	position="105,369" color="FFD823" image="Images/exitwotlk-off.png"		mouse_over="Images/exitwotlk-over.png" 		mouse_down="Images/exitwotlk-down.png" text_offset="1,0"		text_depress="1,2" fade="2, 1, 0, 1" />
+					<!-- Section commented out, should only be play/install... tBC isn't installed. Show "Buy WoW:tBC".
+					</then><else>
+						
+						<static_text	image="Images/warning-overlay.png" position="400,117" align="center" fade=".05, .3, 0, 1"/>	
+						<static_text	label="{BCRequired1}"									size="18"	position="400,154"	align="center"	color="FFFFFF"	fade=".1, .3, 0, 1" />
+						<static_text	label="{BCRequired2}"									size="14"	position="400,182"	align="center"	color="FFD823"	fade=".1, .3, 0, 1" />
+						<static_text	label="{BCRequired3}"									size="14"	position="400,200"	align="center"	color="FFD823"	fade=".1, .3, 0, 1" />
+						<url_link		label="{BuyBC}" data="{BuyBCURL}"         hotkey="*"	size="17"	position="400,230"	align="center"	color="FFD823"	image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png" text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1" />
+						
+						<file_link					data="Support/ReadMe.html"  	hotkey="*"	size="14"        		position="400,300" align="center" color="FFD823" image="Images/readme2wotlk-off.png" 		mouse_over="Images/readme2wotlk-over.png" 		mouse_down="Images/readme2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".15, .3, 0, 1"	/>
+						<file_link					data="{ManualData}" 	hotkey="*"	size="14"          		position="400,341" align="center" color="FFD823" image="Images/manual2wotlk-off.png" 		mouse_over="Images/manual2wotlk-over.png" 		mouse_down="Images/manual2wotlk-down.png" text_offset="0,0"		text_depress="1,2" fade=".2, .3, 0, 1"	/>
+						<page_link					data="TechSupport.xml"     		hotkey="*"	size="14"         		position="400,380" align="center" color="FFD823" image="Images/support2wotlk-off.png"		mouse_over="Images/support2wotlk-over.png"		mouse_down="Images/support2wotlk-down.png" text_offset="0,-3"	text_depress="1,2" fade=".25, .3, 0, 1"	/>
+						<exit_button	                                        	hotkey="*"	size="14"	escape="1" 	position="400,419" align="center" color="FFD823" image="Images/exit2wotlk-off.png"			mouse_over="Images/exit2wotlk-over.png" 		mouse_down="Images/exit2wotlk-down.png" text_offset="1,0"		text_depress="1,2" fade=".3, .3, 0, 1"	/>
+						
+					</else></if>
+					-->
+					<!-- </then></if> -->
+					
+				</else></if>
+				
+			</else></if>
+			
+		</else></if>
+		
+	</else></if>
+	
+	<!-- wow logo. -->
+	<static_text image="Images/logo.mng" label="" position="248,0" />
+	<static_text label="{DisplayedInstallerVersion}" align="center" position="72,542" size="10" color="FFD823" />
+
+</else></if> <!-- InstallerReplaced else block -->
+
+</page>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>	
+<netcdkey>	
+###	
+###  Localized strings for platform specific code	
+###	
+Upgrade	업그레이드
+UpgradeAnother	다른 계정 업그레이드
+IntroTitle	현재 월드 오브 워크래프트 계정을 불타는 성전 계정으로 업그레이드하시겠습니까?
+IntroDiscussion1	업그레이드 버튼을 클릭하면 월드 오브 워크래프트 계정 정보와 불타는 성전의 인증키 입력창이 나타납니다.
+IntroDiscussion2	이미 계정을 업그레이드했거나 나중에 업그레이드하려면 건너뛰기를 클릭하십시오. 불타는 성전을 플레이하시려면 업그레이드된 계정이 반드시 필요합니다.
+DataEntryTitle	월드 오브 워크래프트 계정 정보와 불타는 성전의 인증키를 입력하십시오.
+AccountLabel	계정:
+PasswordLabel	비밀번호:
+KeyLabel	인증키:
+DontShareKeys	인증키를 다른 사람과 공유하지 마십시오. 이 인증키는 계정 업그레이드에 사용됩니다.
+UpgradeInProgressTitle	계정 업그레이드가 진행 중입니다.
+UpgradeSuccessfulTitle	계정 업그레이드가 완료되었습니다.
+UpgradeFailedTitle	계정을 업그레이드할 수 없습니다.
+###	
+###  Localized strings for cross-platform code	
+###	
+ConnectingToBlizzard	블리자드에 접속 중...
+UpgradingAccount	계정 업그레이드 중...
+InvalidKey	입력하신 인증키가 올바르지 않습니다.
+InvalidAccount	입력하신 계정이나 비밀번호가 올바르지 않습니다.
+AlreadyUpgraded	이 계정은 이미 업그레이드되었습니다.
+AccountIneligible	이 계정은 업그레이드를 위한 자격을 갖추지 못했습니다.
+ServiceUnavailable	지금은 서버가 요청한 작업을 수행할 수 없습니다. 잠시 후 다시 시도해 주시기 바랍니다.
+UpgradeSuccessful	계정 업그레이드가 완료되었습니다.
+ServerError	서버 오류:
+UnableToConnect	서버에 연결할 수 없습니다.
+###	
+###  Data for cross-platform code	
+###	
+AccountRegistrationURL	            https://upgrade.worldofwarcraft.co.kr/expansion/installer/upgradeAccount.xml?accountName={Account}&amp;accountPassword={Password}&amp;key={Key}
+CheckAccountRegistrationURL	        https://upgrade.worldofwarcraft.co.kr/expansion/installer/status01.xml
+</netcdkey>	

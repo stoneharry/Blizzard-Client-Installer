@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcdkey>
+###
+###  Localized strings for platform specific code
+###
+Upgrade                             OK
+UpgradeAnother                      Upgrade Another
+IntroTitle                          Upgrade your account to Wrath of the Lich King
+IntroDiscussion1                    Thanks for installing World of Warcraft: Wrath of the Lich King!
+IntroDiscussion2                    Before playing, you must visit the Account Management page and upgrade your account.  This process is very quick, and the installation will continue in the background.  Click "OK" to proceed to the Account Management page.
+DataEntryTitle                      Please enter your World of Warcraft account information and Burning Crusade Authentication Key.
+AccountLabel                        Account:
+PasswordLabel                       Password:
+KeyLabel                            Key:
+DontShareKeys                       Do not share your Authentication Key with others. This Authentication Key can only be used to upgrade a single account.
+UpgradeInProgressTitle              Your account is being upgraded.
+UpgradeSuccessfulTitle              Your account has been upgraded.
+UpgradeFailedTitle                  Your account could not be upgraded.
+###
+###  Localized strings for cross-platform code
+###
+ConnectingToBlizzard                Connecting to Blizzard...
+UpgradingAccount                    Upgrading account...
+InvalidKey                          This Authentication Key is not valid.
+InvalidAccount                      Invalid account or password.
+AlreadyUpgraded                     This account has already been upgraded.
+AccountIneligible                   This account is not eligible for an upgrade.
+ServiceUnavailable                  The server is unable to process your request at this time. Please try again later.
+UpgradeSuccessful                   The account upgrade is complete.
+ServerError                         Server Error:
+UnableToConnect                     Unable to make a connection.
+###
+###  Tag for UI display selection
+###     LocalAuth -> Series of network auth key windows
+###     WebAuth -> Single popup asking to simply kick out to website
+###
+AuthUIType                          WebAuth
+###
+###  Data for cross-platform code
+###
+AccountRegistrationURL              https://upgrade.worldofwarcraft.com/installer/index.xml
+CheckAccountRegistrationURL         https://upgrade.worldofwarcraft.com/installer/status.xml
+</netcdkey>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      World of Warcraft: Wrath of the Lich King Installer
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  English
+
+UnableToInstall                               Unable to Install
+YouNeedToBeAnAdminUser                        You must be an administrator to install Wrath of the Lich King.
+ClickHereForMoreInformation                   Click here for more |i|nformation
+NewerOperatingSystem1                         Wrath of the Lich King requires a newer operating system to run.
+NewerOperatingSystem2                         
+WindowsRequiredOS                             Windows 2000, XP or newer is required.
+MacOSXRequiredOS                              Mac OS X 10.3.9 or later is required.
+
+WrongLocale1                                  This version of Wrath of the Lich King is only compatible with
+WrongLocale2                                  the English (US) version of World of Warcraft.
+
+ChooseLanguages                               Choose Languages
+Language1                                     English
+Language2                                     Spanish
+
+RestartRequired                               Restart Required
+YouNeedToRestart1                             You need to restart your computer before
+YouNeedToRestart2                             playing Wrath of the Lich King.
+
+FailedMinSpec1                                Your computer fails to meet the
+FailedMinSpec2                                minimum system requirements.
+NotEnoughRAM                                  Not enough RAM (learn more)
+TooSlowCPU                                    Insufficient CPU Speed (learn more)
+InstallAnyway                                 |I|nstall Anyway
+SystemRequirementsURL						  http://us.blizzard.com/support/article.xml?articleId=21053
+
+ViewTheReadme                                 View |R|eadme
+ViewTheManual                                 View |M|anual
+TechnicalSupport                              |C|ustomer Support
+ExitInstaller                                 E|x|it Installer
+InstallWorldOfWarcraft                        Install |W|rath of the Lich King
+PlayWorldOfWarcraft                           |P|lay Wrath of the Lich King
+Uninstall                                     |U|ninstall
+ManualData                                    Support/Manual_WLK.pdf
+TechSupportLink								  http://www.worldofwarcraft.com/support/
+
+InstallationComplete                          Installation Complete!
+UpdateAnAccount1                              If you haven't upgraded your World of Warcraft account, click the 
+UpdateAnAccount2                              button below. Your account must be upgraded to login and play.
+UpdateYourAccount                             |U|pgrade Your Account
+UpdateYourAccountURL                          https://upgrade.worldofwarcraft.com/installer/index.xml?product=WLK&amp;locale=enUS&amp;trial=0&amp;promo=0
+HaveAnAccountAlready1                         If your account has already been upgraded, click the button below
+HaveAnAccountAlready2                         to launch Wrath of the Lich King.
+
+Back                                          |B|ack
+Cancel                                        Cancel
+
+WoWRequired1                                  World of Warcraft Required
+WoWRequired2                                  Please install World of Warcraft before installing Wrath of the Lich King
+BCRequired1                                   Burning Crusade Required
+BCRequired2                                   Please install Burning Crusade before installing Wrath of the Lich King
+BuyWoW                                        |B|uy World of Warcraft Online
+BuyWoWURL                                     http://www.worldofwarcraft.com/buy
+BuyBC                                         |B|uy Burning Crusade Online
+BuyBCURL                                      http://www.worldofwarcraft.com/buy
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

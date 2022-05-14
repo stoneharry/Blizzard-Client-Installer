@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World of Warcraft: Wrath of the Lich King Online Help</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue">
+			Audio Problems (PC)
+		</a>		
+        <p class="normal">Here are some of the most commonly experienced sound issues. If you are experiencing a problem that is not listed below, or the steps listed do not resolve the problem, please   
+        <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">contact Technical Support</a>.
+        </p>
+
+        <p class="normal"><font class="small_header_blue">1. Some sounds are playing much louder than others:</font> This is often the result of inappropriate audio settings. Delete the Config.wtf file. This file can be found in the World of Warcraft WTF folder (C:/../World of Warcraft/WTF/Config.wtf).</p>  
+
+        <p class="normal"><font class="small_header_blue">2. Sound starts to decay until no sound can be heard:</font> Try reinstalling 
+        <a href="http://www.microsoft.com/directx" class="menubox_header_white" target="_new">DirectX</a> and reinstalling the latest drivers for your sound card. It is possible that some program has modified the DirectSound or driver settings. </p>
+
+        <p class="normal"><font class="small_header_blue">3. Cannot hear any sound at all:&nbsp;</font> Check the file "SESound.log" for errors initializing. This log can be found in the World of Warcraft root directory. If errors exist, send the log and a description of the problem to Technical Support.
+        
+        <blockquote>
+            Example of an error-free log:
+            <br><br>
+		SESound Engine Init
+		7/25 13:17:55.213   - FMOD Memory Init<br>
+		7/25 13:17:55.213   - FMOD System Create<br>
+		7/25 13:17:55.354   - FMOD version 00040907 detected<br>
+		7/25 13:17:55.354   - Hardware is DISABLED<br>
+		7/25 13:17:55.354   - Reverb is DISABLED<br>
+		7/25 13:17:55.354   - 2 Output drivers detected<br>
+		7/25 13:17:55.354   --- [0] System Default<br>
+		7/25 13:17:55.354   --- [1] Realtek HD Audio output<br>
+		7/25 13:17:55.369   - Using [0] System Default for Game Output<br>
+		7/25 13:17:55.369   - Using 32 channels.<br>
+		7/25 13:17:55.369   - DSPBufferSize = AUTO DETECT<br>
+		7/25 13:17:55.369   - Detected Control Panel Speaker Mode = STEREO<br>
+		7/25 13:17:55.369   - Setting WoW Speaker Mode to STEREO<br>
+		7/25 13:17:55.385   - FMOD System Init OK!<br>
+        </blockquote>
+
+        <p class="normal"><font class="small_header_blue">4. Popping or cracking sounds while playing the game:&nbsp;</font>Uninstall any programs that may have placed audio codecs on your system (e.g., video/audio players). Disable other audio software during gameplay. MP3 players, for example, drain system resources used by World of Warcraft: Wrath of the Lich King, and often bring about sound corruption. </p>
+        <p class="normal"><font class="small_header_blue">5. Audigy 2 crashes:</font> If you are using an Audigy 2, and you are experiencing game crashes or system reboots, you may need to reconfigure the audio output. Look in your \SBAudigy2\Program\WDM\COMMON\ directory for a file called "CtPanel.exe". With this tool you will be able to modify your device settings. Under "Speaker Settings", change CMSS 3D Selection to "Off". </p>
+        <p class="normal"><font class="small_header_blue">6. Audio-related performance:&nbsp;</font>If you are experiencing performance problems on your Windows machine, you may want to temporarily disable your sound card as a test. If your performance improves, you should 
+        <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">contact Technical Support</a> about improving your system performance with sound.
+        <ul>
+            <li>Right-click "My Computer" and select "Properties".
+            <li>Windows 2000 users should then click on the Hardware tab.
+            <li>Click "Device manager".
+            <li>Expand the Sound, video, and game controllers branch.
+            <li>Select the sound card and click the Properties button.
+            <li>Disable the device from the active profile.
+            <li>Click the "OK" button.
+            <li>Reboot your computer and start the game again. 
+        </ul>  
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+
+	<!-- Display the product specific animated mng file -->
+	<static_text image="Images/arthas.mng" label="" position="380,0" />
+
+</page>

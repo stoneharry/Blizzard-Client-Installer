@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+
+	<page_link 		data="LangSelection.xml" hotkey="*" size="24" position="81,190" color="FFD823" image="Images/installwotlk-off.png" mouse_over="Images/installwotlk-over.png" mouse_down="Images/installwotlk-down.png" text_offset="1,-1" text_depress="2,3" />
+
+</page>

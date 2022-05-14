@@ -1,0 +1,400 @@
+body{
+color:#ccaa00;
+background-color:black;
+overflow:visible;
+
+font-size:9pt;
+white-space:no-wrap;
+line-height: 160%
+
+}
+
+.topic{
+color:#ffdd33;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:8pt;
+position:relative;
+left:5px;
+
+cursor:hand;
+}
+
+.topic_red{
+color:#cc0000;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:8pt;
+position:relative;
+left:5px;
+
+cursor:hand;
+}
+
+a.menubox_header_white:link{
+color:#E1E1E1;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+a.menubox_header_white:visited{
+color:#E1E1E1;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+a.menubox_header_white:active{
+color:#E1E1E1;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+
+a.menubox_header_white:hover{
+color:#A8A4AC;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+
+.menubox_header_white2{
+color:#dddddd;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+
+.menubox_header_blue{
+color:#559fdd;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+
+.menubox_header_yellow{
+color:#ccaa00;
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:bold;
+}
+
+.topicText{
+color:#dddddd;
+font-family:Verdana; ±¼¸²; Gulim;
+font-sixe:10pt;
+}
+
+.small{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:8pt;
+}
+
+.small_white{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:8pt;
+color:#dddddd;
+margin-left:5%;
+margin-right:5%;
+}
+
+.small_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:8pt;
+}
+
+.small_yellow{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#ccaa00;
+font-size:8pt;
+}
+
+.normal{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:10pt;
+}
+
+.normal_red{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#cc0000;
+font-size:10pt;
+}
+
+.normal_white{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+}
+
+.normal_white_bold{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+font-weight:bold;
+}
+
+.normal_white_margined{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+margin-left:5%;
+margin-right:5%;
+}
+
+.normal_white_margined_2{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+margin-left:10%;
+margin-right:10%;
+}
+
+.normal_white_margined_3{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+margin-left:15%;
+margin-right:15%;
+}
+
+.oblique_white{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+}
+
+.oblique_bold_white{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+font-weight:bold;
+}
+
+.oblique_yellow{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#ccaa00;
+font-size:10pt;
+}
+
+.oblique_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+}
+
+.oblique_grey{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#888888;
+font-size:10pt;
+}
+
+.oblique_bold_red{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#cc0000;
+font-size:9pt;
+font-weight:bold;
+}
+
+.oblique_white_margined{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+margin-left:5%;
+margin-right:5%;
+}
+
+.oblique_grey_margined_3{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#888888;
+font-size:10pt;
+margin-left:15%;
+margin-right:15%;
+}
+
+.oblique_bold_white_margined{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+font-weight:bold;
+margin-left:5%;
+margin-right:5%;
+}
+
+.oblique_yellow_margined{
+color:#ccaa00;
+font-size:10pt;
+margin-left:5%;
+margin-right:5%;
+}
+
+.oblique_yellow_margined_2{
+color:#ccaa00;
+font-size:10pt;
+margin-left:10%;
+margin-right:10%;
+}
+
+.oblique_yellow_margined_3{
+color:#ccaa00;
+font-size:10pt;
+margin-left:15%;
+margin-right:15%;
+}
+
+.oblique_blue_margined{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+margin-left:5%;
+margin-right:5%;
+}
+
+.oblique_blue_margined_2{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+margin-left:10%;
+margin-right:10%;
+}
+
+.oblique_blue_margined_3{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+margin-left:15%;
+margin-right:15%;
+}
+
+.oblique_blue_margined_centered{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+margin-left:10%;
+margin-right:10%;
+text-align:center;
+}
+
+.oblique_bold_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+text-align:center;
+}
+
+.small_header_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+font-weight:bold;
+}
+
+.small_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+}
+
+.small_header_yellow{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#ccaa00;
+font-size:10pt;
+font-weight:bold;
+}
+
+.small_header_white{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+font-weight:bold;
+}
+
+.small_header_red{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#cc0000;
+font-size:10pt;
+font-weight:bold;
+}
+
+.small_header_blue_centered{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:10pt;
+font-weight:bold;
+text-align:center;
+}
+
+.small_header_white_centered{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:10pt;
+font-weight:bold;
+text-align:center;
+}
+
+.large_header_blue{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#559fdd;
+font-size:13pt;
+font-weight:bold;
+}
+
+.large_header_yellow{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#ccaa00;
+font-size:13pt;
+font-weight:bold;
+}
+
+.large_header_white{
+font-family:Verdana; ±¼¸²; Gulim;
+color:#dddddd;
+font-size:13pt;
+font-weight:bold;
+}
+
+.medium_header{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:12pt;
+font-weight:bold;
+}
+
+ul{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:normal;
+list-style-position:outside;
+}
+
+ol{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:normal;
+list-style-position:outside;
+}
+
+li{
+font-family:Verdana; ±¼¸²; Gulim;
+font-size:9pt;
+font-weight:normal;
+list-style-position:outside;
+	margin: 20 20 20 20;
+}
+
+.lower_roman{
+font-family:Verdana; ±¼¸²; Gulim;
+list-style-type:lower-roman;
+list-style-position:outside;
+}
+
+.upper_alpha{
+font-family:Verdana; ±¼¸²; Gulim;
+list-style-type:upper-alpha;
+list-style-position:outside;
+}
+
+#theMenu {
+position:absolute;
+left:0px;
+}
+
+div.pad{
+    margin-bottom: 6px;
+}

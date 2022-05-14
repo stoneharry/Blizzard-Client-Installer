@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product_data>
+ProductLocaleCode                  enUS
+ProductName                        Burning Crusade
+StartMenuFolderName                World of Warcraft
+LogFileName                        Logs\Burning Crusade Install Log
+OverrideInstallerRegistryKey       World of Warcraft/OverrideInstaller
+OriginalInstallPathRegistryKey     World of Warcraft/InstallPath
+Win32_SuggestedRAM                 512
+MacOS_SuggestedRAM                 512
+Intel_SuggestedMHz                 800
+PowerPC_SuggestedMHz               933
+Win9x_SupportedOS                  4,10        #  95:4,0  98:4,10  ME:4,90  # Burning Crusade will install on 98/ME even though it is not officially supported
+WinNT_SupportedOS                  5,0         # NT4:4,0  2K:5,0   XP:5,1
+MacOS_SupportedOS                  1039        # XXYZ = XX.Y.Z
+CanCreateDesktopShortcut           1
+MustInstallInExistingFolder        0
+#MacOS_BaseInstallLocation         # using the default value
+#Win32_BaseInstallLocation         # using the default value
+MacOS_InstallerData                Burning Crusade Disc 1:Burning Crusade Disc 1:Installer Tome.mpq
+Win32_InstallerData                Burning Crusade Disc 1:BCDisc1:Installer Tome.mpq
+ProgressBarInMainWindow            1
+</product_data>

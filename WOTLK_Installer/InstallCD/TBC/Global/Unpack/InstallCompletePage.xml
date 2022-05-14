@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+	
+	<if true_condition="InstallComplete"><then>
+	
+		<overlay page="InstallSuccessful.xml" />
+		
+	</then><else>
+	
+		<overlay page="MainPage.xml" />
+		
+	</else></if>	
+	
+</page>

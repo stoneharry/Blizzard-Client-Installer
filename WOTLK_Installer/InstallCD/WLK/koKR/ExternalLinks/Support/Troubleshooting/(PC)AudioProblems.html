@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>월드 오브 워크래프트: 리치 왕의 분노 온라인 도움말</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue"><br>
+사운드 문제 (PC)
+		</a>		
+        <p class="normal">다음은 가장 일반적으로 발생하는 사운드 관련 문제점입니다. 여기에 설명되어 있지 않은 문제를 경험하거나 아래의 방법으로도 해결되지 않는 문제가 있으면 <a href="http://www.worldofwarcraft.co.kr/support/service/" class="menubox_header_white" target="_new">고객지원 팀</a>으로 문의해 주시기 바랍니다.      </p>
+
+        <p class="normal"><font class="small_header_blue">1. 일부 사운드가 다른 사운드에 비해 더 크게 들릴 때:</font> 소리 설정에 문제가 있는 경우에 발생할 수 있습니다. 월드 오브 워크래프트 설치 폴더에 있는 Config.wtf 파일을 삭제하시기 바랍니다. (C:/../World of Warcraft/WTF/Config.wtf).</p>  
+
+        <p class="normal"><font class="small_header_blue">2. 사운드가 점점 줄어들다가 아무것도 들리지 않을 때:</font> <a href="http://www.microsoft.com/korea/windows/directx/default.mspx" class="menubox_header_white" target="_new">DirectX</a>를 다시 설치해 보거나 최신 사운드 카드 드라이버를 설치해 보십시오. 일부 프로그램이 DirectSound 또는 드라이버 설정을 변경했을 수 있습니다. </p>
+
+        <p class="normal"><font class="small_header_blue">3. 사운드가 전혀 들리지 않을 때:&nbsp;</font> sound.log 파일을 열어 오류의 원인을 살펴보십시오. 이 파일은 월드 오브 워크래프트가 설치된 디렉토리에 있습니다. 파일 내에 오류 정보가 있다면 고객지원 팀으로 해당 오류 정보를 보내주시기 바랍니다.
+        
+        <blockquote>
+            정상적인 로그 파일의 예:
+            <br><br>
+            SESound Engine Init<br>
+            7/25 13:17:55.213   - FMOD Memory Init<br>
+            7/25 13:17:55.213  - FMOD System Create<br>
+            7/25 13:17:55.354  - FMOD version 00040907 detected<br>
+            7/25 13:17:55.354   - Hardware is DISABLED<br>
+            7/25 13:17:55.354   - Reverb is DISABLED<br>
+            7/25 13:17:55.354   - 2 Output drivers detected<br>
+            7/25 13:17:55.354   --- [0] System Default<br>
+            7/25 13:17:55.354   --- [1] Realtek HD Audio output<br>
+            7/25 13:17:55.369  - Using [0] System Default for Game Output<br>
+            7/25 13:17:55.369   - Using 32 channels<br>
+            7/25 13:17:55.369   - DSPBufferSize = AUTO DETECT<br>
+            7/25 13:17:55.369   - Detected Control Panel Speaker Mode = STEREO<br>
+            7/25 13:17:55.369   - Setting WoW Speaker Mode to STEREO<br>
+            7/25 13:17:55.385   - FMOD System Init OK!<br>
+        </blockquote>
+
+        <p class="normal"><font class="small_header_blue">4. 게임 도중 이상한 잡음이 들릴 때:&nbsp;</font> 오디오 코덱이 함께 설치된 프로그램을 삭제하십시오. 예를 들면, 비디오/오디오 플레이어 등이 있습니다. 또한 게임 중 다른 오디오 프로그램을 사용하지 마시기 바랍니다. 예를 들어, 일부 MP3 재생 프로그램의 경우 월드 오브 워크래프트: 리치 왕의 분노가 사용해야 하는 시스템 리소스를 차지하여 충돌이 일어날 수 있습니다.</p>
+        <p class="normal"><font class="small_header_blue">5. 오디지 2 오류:</font> 오디지(Audigy) 2를 사용하신다면 게임 중 튕김 현상이나 시스템 재부팅을 겪으실 수 있습니다. 이럴 때는 오디오 출력 부분을 재설정하셔야 합니다. 오디지 설치 폴더(\SBAudigy2\Program\WDM\COMMON\)를 보시면 "CtPanel.exe"이라는 프로그램이 있는데 이 프로그램을 실행한 후 "스피커 설정(Speaker Settings)" 부분에서 CMSS 3D 설정을 "끔(Off)"으로 설정하시기 바랍니다. </p>
+        <p class="normal"><font class="small_header_blue">6. 사운드 관련 성능 문제:&nbsp;</font>사운드와 관련하여 성능 문제가 의심되시면 아래 방법을 사용하여 임시로 사운드 카드를 비활성화시켜 보시기 바랍니다. 이로 인해 성능 향상이 있다면 <a href="http://www.worldofwarcraft.co.kr/support/service/" class="menubox_header_white" target="_new">고객지원 팀</a>으로 문의하셔서 사운드 카드와 관련한 성능 향상에 대한 안내를 받으시기 바랍니다.
+        <ul class="normal">
+            <li>[내컴퓨터]에 오른쪽 버튼을 클릭하여 [속성]을 클릭합니다.
+            <li>[하드웨어] 탭을 선택합니다.
+            <li>[장치 관리자]를 선택합니다.
+            <li>[사운드, 비디오 및 게임 컨트롤러]를 선택합니다.
+            <li>사운드 카드를 오른쪽 클릭한 후 [속성] 버튼을 클릭합니다.
+            <li>[장치 사용]을 클릭하여 [이 장치 사용 안 함]을 클릭합니다.
+            <li>"확인" 버튼을 눌러 [속성]창을 닫고 시스템을 재부팅합니다.
+        </ul>       
+
+</body>
+</html>

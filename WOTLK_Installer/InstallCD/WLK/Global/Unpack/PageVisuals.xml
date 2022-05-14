@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics>
+
+<!-- WOW:WotLK Installer PageVisuals -->
+
+<!-- MainPage.xml / MainPageAnim.xml -->
+
+UnableToInstallSize				30
+YouNeedToBeAnAdminUserSize		14
+NewerOperatingSystem1Size		14
+NewerOperatingSystem2Size		14
+WindowsRequiredOSSize			14
+MacOSXRequiredOSSize			14
+WrongLocale1Size				14
+WrongLocale2Size				14
+UninstallSize					14
+
+<!-- Installing.xml -->
+
+PercentTextSize				16
+ProgressTextSize				14
+
+
+<!-- InstallSuccessful.xml -->
+
+InstallationCompleteSize			26
+UpdateAnAccount1Size			12
+UpdateAnAccount2Size			12
+UpdateAnAccount3Size			12
+UpdateYourAccountURLSize			26
+HaveAnAccountAlready1Size		12
+HaveAnAccountAlready2Size		12
+
+
+<!-- SystemRequirements.xml -->
+
+FailedMinSpec1Size				18
+FailedMinSpec2Size				18
+NotEnoughRAMSize				14
+TooSlowCPUSize					14
+
+
+<!-- Footer.xml -->
+
+DisplayedInstallerVersionSize		8
+
+</metrics>

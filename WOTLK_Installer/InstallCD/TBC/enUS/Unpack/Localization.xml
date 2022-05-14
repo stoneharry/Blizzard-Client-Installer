@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+UnableToStartUp                               Sorry, the installer was unable to start up.
+UnableToLoadData                              Sorry, the installer was unable to load a necessary file.
+UnableToOpenURL                               Sorry, the installer was unable to open a URL.
+ContactTechSupport                            If this problem persists, please contact Blizzard Technical Support.
+ErrorVerifying%sonDisk%s                      An error was detected while verifying the contents of the file "%1$s". There may be a problem with your system, or with the drive at %2$s. You can attempt to install again. 
+%sExpectedVersion%d.%d.%d.%dOrNewerButYouHave%d.%d.%d.%d   The installer requires "%1$s" version %2$d.%3$d.%4$d.%5$d or later. You have an older version, %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dOrOlderButYouHave%d.%d.%d.%d   The installer does not need to be applied. It requires a version of "%1$s" older than %2$d.%3$d.%4$d.%5$d, but you already have version %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dOrNewer                        The installer requires "%1$s" version %2$d.%3$d.%4$d.%5$d or later.
+WaitingForFileClose                           Waiting for files to close...
+FilesMustBeClosed                             The installation process cannot continue until all files are closed.
+RequiredFile%sMissing                         The file "%1$s" is required, but is not in the destination directory.
+RequiredFolder%sMissing                       The folder "%1$s" is required, but is not in the destination directory.
+CannotInstallInSystemDirectory                The installer is unable to install to this location because it is a system directory. Please try installing to a different location. 
+%sAlreadyInstalled                            %1$s is already installed at this location. Please try installing to a different location. 
+CouldntCreateFolder%s                         The folder "%1$s" could not be created.
+CouldntCreateFile%s                           The file "%1$s" could not be created.
+CouldntOpenFile                               A file could not be opened.
+CouldntOpenFile%s                             The file "%1$s" could not be opened.
+CouldntOpenURL%s                              The URL "%1$s" could not be opened. You may be able to open this URL by typing it into a web browser manually.
+CouldntCreateShortcut%s                       The shortcut "%1$s" could not be created.
+CouldntRename%sTo%s                           The file "%1$s" could not be renamed to "%2$s".
+CouldntGetReadWritePermissionFor%s            The file "%s" cannot be removed because it's locked or currently in use.
+CantInstall%sOnCaseSensitiveVolume            Sorry, %s cannot be installed on a case-sensitive volume.
+File%sIsReadOnly                              The file "%1$s" is read only and cannot be overwritten. Please try installing to a different location.
+File%sWillBeOverwritten                       The file "%1$s" will be overwritten.
+FolderContentsWillBeErased                    The existing contents of this folder will be erased.
+Folder%sAlreadyExists                         A folder named "%1$s" already exists.
+File%sAlreadyExists                           A file named "%1$s" already exists.
+File%sAlreadyOpenedAs%s                       The file "%1$s" could not be opened because it's already open as "%2$s".
+File%sNotFound                                The file "%1$s" could not be found.
+Folder%sNotFound                              The folder "%1$s" could not be found.
+File%sIsOver4GB                               The file "%1$s" is larger than 4GB, which is unexpected.
+Error%dOpening%s                              The file "%2$s" could not be opened, because an error %1$d occurred.
+Error%dOpening%sInArchive%s                   The file "%2$s" in archive "%3$s" could not be opened, because an error %1$d occurred.
+Error%dClosing%s                              The file "%2$s" could not be closed, because an error %1$d occurred.
+Error%dCreating%sWith%dBytes                  The file "%2$s" (%3$d bytes) could not be created, because an error %1$d occurred.
+Error%sCreating%sWith%dBytes                  The file "%2$s" (%3$d bytes) could not be created, because an error occurred: %1$s.
+Error%dGettingSizeOf%s                        Unable to read the size of file "%2$s", because an error %1$d occurred.
+ErrorReading%s                                The file "%1$s" could not be read.
+Error%dReading%s                              The file "%2$s" could not be read, because an error %1$d occurred.
+ErrorWriting%s                                The file "%1$s" could not be written.
+Error%dWriting%s                              The file "%2$s" could not be written, because an error %1$d occurred.
+ErrorDeletingFile%s                           The file "%1$s" could not be deleted.
+ErrorDeletingFolder%s                         The folder "%1$s" could not be deleted.
+ErrorApplyingPatch%s                          The patch "%1$s" could not be applied.
+File%sIsCorrupt                               The file "%1$s" appears to be corrupt.
+TryDownloadingAgain                           You may need to download this file again.
+ErrorRemovingRegistryKey%s%s                  The registry key "Blizzard Entertainment\%1$s\%2$s" could not be removed.
+MediaError%dReading%sin%sonDisk%s             The installer was unable to read the file "%3$s". This error may be caused by problems with the media or drive at %4$s--for example, a scratched or dirty CD-ROM/DVD-ROM, hard drive corruption, or a networking problem while downloading the installer. (The data being read was "%2$s", and the error code was %1$d.)
+MediaError%dReading%sonDisk%s                 The installer was unable to read the file "%2$s". This error may be caused by problems with the media or drive at %3$s--for example, a scratched or dirty CD-ROM/DVD-ROM, hard drive corruption, or a networking problem while downloading the installer. (The error code was %1$d.)
+IncorrectInformation                          The information provided was not correct.
+PathTooLong                                   A file path's length exceeds the maximum size. Please try installing to a path with a shorter name.
+CouldntCreateRegistryKey%s%s                  The registry key "Blizzard Entertainment\%1$s\%2$s" could not be created.
+Installing%sTo%sOn%s                          Installing %1$s to "%2$s" on %3$s.
+InstalledFile%s                               Installed file "%1$s".
+InstalledFolder%s                             Installed folder "%1$s".
+CreatedShortcut%s                             Created shortcut "%1$s".
+MovedFile%sTo%s                               Moved file "%1$s" to "%2$s".
+DeletedFile%s                                 Deleted file "%1$s".
+DeletedFolder%s                               Deleted folder "%1$s".
+InstallSuccessful                             Installation completed successfully.
+FilesMayBeLeftBehind                          The installation was stopped, but some files may have been left behind on the disk.
+ErrorInstallingDirectX                        An error occurred while installing DirectX.
+DiskHas%sButNeeds%sToInstall%s                This disk doesn't have enough free space to install %1$s. (More than %3$s is required, but only %2$s is available.) Please free up space or try installing to a different disk.
+CertainDiskHas%sButNeeds%sToInstall%s         The disk doesn't have enough free space to install %1$s. (More than %3$s is required, but only %2$s is available.) Please free up space.
+DiskIsTooFullFor%s                            The disk doesn't have enough free space to install %1$s. Please free up space.
+EndUserLicenseAgreement                       End User License Agreement
+ScrollToEnd                                   (Please read this agreement. The "Agree" button activates when you reach the end.)
+ConfirmAgreement                              Do you agree to the terms of the above agreement?
+Agree                                         &amp;Agree
+Disagree                                      &amp;Disagree
+Stop                                          Stop
+Installer                                     Installer
+Error                                         Error
+Warning                                       Warning
+PreparingToInstall                            Preparing to install...
+Installing%s                                  Installing "%1$s"...
+CleaningUp                                    Cleaning up...
+InstallerCouldntInitialize                    Sorry, the installer could not be initialized.
+InstallFailed                                 Sorry, the installation failed.
+ConflictWarning                               There may be problems with this installation. Do you want to continue anyway?
+InstalledWithWarnings                         The installation completed with the following warnings:
+InstallCanceled                               Installation was cancelled.
+PleaseInsertCD%s                              Please insert the CD labeled "%1$s."
+Back                                          &amp;Back
+Cancel                                        &amp;Cancel
+Install                                       &amp;Install
+Next                                          &amp;Next
+OK                                            &amp;OK
+Choose                                        &amp;Choose
+SelectFolder                                  Select &amp;Folder...
+%.1fMB                                        %1$.1f MB
+%.1fGB                                        %1$.1f GB
+CDKeyTitle                                    CD-Key
+EnterGameOwnerName                            Please enter the name of the owner of this game.
+EnterGameCDKey%dFromCase                      Please enter the %1$d character CD-key from the game's CD case.
+EnterAuthenticationKey%d                      Please enter your %1$d character Authentication Key.
+DontShareCDKeys                               Do not share your CD-key with others. Only one person can be logged into Battle.net at once with a given CD-key.
+DontShareAuthenticationKeys                   Do not share your Authentication Key with others. This could lead to account termination and character deletion.
+InvalidUserName                               Please provide a valid name. User names cannot exceed 31 characters in length.
+InvalidCDKeyFor%s                             The CD-Key entered in the %1$s field was invalid. Please make sure that it was typed in correctly.
+InvalidAuthenticationKey                      Sorry, the provided Authentication Key was invalid. Please make sure that it was typed in correctly.
+Name                                          Name:
+%sCDKey                                       %1$s CD-Key:
+AuthenticationKey                             Authentication Key:
+AboutToUninstall%s                            Click "Uninstall" if you are sure that you want to uninstall %1$s.
+BrokenExtensionHintPDF                        To view this file, you may need to install Adobe Reader. Please visit http://www.adobe.com/products/acrobat/readstep2.html for more information.
+Uninstaller                                   Uninstaller
+Uninstall                                     &amp;Uninstall
+Uninstalling                                  Uninstalling...
+Uninstalled%s                                 %1$s was uninstalled successfully.
+UninstallWarning                              Uninstallation completed with the following warnings: 
+UninstallFilesLeftBehindWarning               Some files may be left behind. Do you want to continue uninstallation anyway?
+Skip                                          Skip
+TryAgain                                      Try Again
+Linux_PathPrompt                              Enter the install path for %1$s (requires %2$s of space)
+Win32_DirectX%sRequiredFor%s                  You do not have the required version of DirectX installed on your machine. %2$s requires DirectX version %1$s in order to run. Would you like to install DirectX now?
+Win32_YesInstallDirectX                       &amp;Yes, Install DirectX
+Win32_NoButContinueInstall                    &amp;No, but Continue Installation
+Win32_CancelInstall                           &amp;Cancel Installation
+Win32_InvalidDirectory                        Error: Invalid directory chosen. 
+Win32_NotEnoughSpace                          Error: There is not enough free space on this drive. 
+Win32_DirectoryDoesNotExist                   Error: That directory does not exist. 
+Win32_DirectoryExists                         Warning: That directory exists. 
+Win32_DirectoryNonEmpty                       Warning: That directory exists and is not empty. 
+Win32_SpaceAvailable                          Space Available:
+Win32_SpaceRequired                           Space Required:
+Win32_InstallTerminated                       Installation Terminated:
+Win32_CouldNotCreateAddRemoveProgramsEntry%s  Unable to create an entry in the Add/Remove Programs Control Panel for "%1$s."
+Win32_CouldNotRemoveAddRemoveProgramsEntry%s  Unable to remove an entry in the Add/Remove Programs Control Panel for "%1$s."
+Win32_RestartRequired                         Restart Required
+Win32_SuccessfulInstall%sRestartMessage       Before playing %1$s, you will need to restart your computer. Do you want to restart now?
+Win32_GenericRestartMessage                   The software that was installed requires you to restart your computer. Do you want to restart now?
+Win32_CreateShortcutOnDesktop                 Create shortcut on desktop
+Win32_PleaseChooseDirectory                   Please choose a directory to install to:
+Win32_RestoreDefault                          &amp;Restore Default
+Win32_InstallationDestinationDirectory        Installation Destination Directory
+MacOS_%sWillBeInstalledInto                   %1$s will be installed into:
+MacOS_AvailableDiskSpace                      Available Disk Space:
+MacOS_InstallationSize                        Installation Size:
+PauseGoogleDesktopSearch					 Google Desktop Search can cause problems installing Blizzard products. Please pause or close Google Desktop Search before continuing this installation. See http://desktop.google.com/support for additional information.
+</localization>

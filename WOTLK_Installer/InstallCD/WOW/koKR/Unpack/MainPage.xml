@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft main installer page -->
+
+<page backdrop="Images/InstallerBackdrop.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+	
+	
+	<!-- Bottom layer animating widgets -->
+	<overlay page="Header.xml" />
+
+
+	<!-- Show the "not an admin" widget -->
+	<if false_condition="IsAdmin"><then>
+
+			<static_text image="Images/techsupport-overlay.png" label="" position="0,0" />	
+			<static_text label="{UnableToInstall}"                                                   size="30" position="130,120" color="FFFFFF"/>
+			<static_text label="{YouNeedToBeAnAdminUser}"                                            size="14" position="130,150" color="FFD823"/>
+			<file_link   label="{ClickHereForMoreInformation}"                           hotkey="*"  size="17" position="134,172" color="FFD823" data="Support/AdminUser.html" image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png" text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1" />
+			
+			<file_link     label="{ViewTheReadme}"           data="Support/ReadMe.html"  hotkey="*"            position="234,240" color="FFD823" image="Images/readme-off.png" 		mouse_over="Images/readme-over.png" 		mouse_down="Images/readme-down.png" text_offset="-2,1" text_depress="1,2" fade=".15, .3, 0, 1" />
+			<file_link     label="{ViewTheManual}"           data="{ManualData}"         hotkey="*"            position="234,279" color="FFD823" image="Images/manual-off.png" 		mouse_over="Images/manual-over.png" 		mouse_down="Images/manual-down.png" text_offset="-2,1" text_depress="1,2" fade=".2, .3, 0, 1" />				
+			<page_link     label="{TechnicalSupport}"        data="TechSupport.xml"      hotkey="*"            position="234,316" color="FFD823" image="Images/techsupport-off.png" mouse_over="Images/techsupport-over.png" 	mouse_down="Images/techsupport-down.png" text_offset="-2,-3" text_depress="1,2" fade=".25, .3, 0, 1" />
+			<exit_button   label="{ExitInstaller}"                                       hotkey="*" escape="1" position="234,362" color="FFD823" image="Images/exit-off.png" 		mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".3, .3, 0, 1" />
+					
+	</then><else>
+	
+		<!-- Show the "unsupported OS" widget -->
+		<if false_condition="SupportedOS"><then>
+		
+			<static_text image="Images/techsupport-overlay.png" label="" position="0,0" />	
+			<static_text label="{UnableToInstall}"                                                   size="36" position="130,120" color="FFFFFF"/>
+			<static_text label="{NewerOperatingSystem1}"   		                                     size="18" position="130,165" color="FFD823"/>
+			<static_text label="{NewerOperatingSystem2}"                                             size="18" position="130,185" color="FFD823"/>
+			<file_link     label="{ViewTheReadme}"           data="Support/ReadMe.html"  hotkey="*"            position="234,240" color="FFD823" image="Images/readme-off.png" 		mouse_over="Images/readme-over.png" 		mouse_down="Images/readme-down.png" text_offset="-2,1" text_depress="1,2" fade=".15, .3, 0, 1" />
+			<file_link     label="{ViewTheManual}"           data="{ManualData}"         hotkey="*"            position="234,279" color="FFD823" image="Images/manual-off.png" 		mouse_over="Images/manual-over.png" 		mouse_down="Images/manual-down.png" text_offset="-2,1" text_depress="1,2" fade=".2, .3, 0, 1" />				
+			<page_link     label="{TechnicalSupport}"        data="TechSupport.xml"      hotkey="*"            position="234,316" color="FFD823" image="Images/techsupport-off.png" mouse_over="Images/techsupport-over.png" 	mouse_down="Images/techsupport-down.png" text_offset="-2,-3" text_depress="1,2" fade=".25, .3, 0, 1" />
+			<exit_button   label="{ExitInstaller}"                                       hotkey="*" escape="1" position="234,362" color="FFD823" image="Images/exit-off.png" 		mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".3, .3, 0, 1" />
+					
+			<if true_condition="Win32"><then>
+				<static_text label="{WindowsRequiredOS}" size="14" position="130,215" color="FFD823" />		
+			</then></if>
+
+			<if true_condition="MacOS"><then>
+				<static_text label="{MacOSXRequiredOS}" size="14" position="130,215" color="FFD823" />		
+			</then></if>
+			
+		</then><else>
+
+			<!-- Show the "install" widget -->
+			<if false_condition="Installed"><then>
+	
+				<begin_install label="{InstallWorldOfWarcraft}"  data="MainInstall,InstallerCanVerify,{LanguageCode}" hotkey="*" size="23" position="137,165" color="FFD823" image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png" text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1" />
+			
+				<file_link     label="{ViewTheReadme}"           data="Support/ReadMe.html"  hotkey="*"            position="234,235" color="FFD823" image="Images/readme-off.png" 		mouse_over="Images/readme-over.png" 		mouse_down="Images/readme-down.png" text_offset="-2,1" text_depress="1,2" fade=".15, .3, 0, 1" />
+				<file_link     label="{ViewTheManual}"           data="{ManualData}"         hotkey="*"            position="234,274" color="FFD823" image="Images/manual-off.png" 		mouse_over="Images/manual-over.png" 		mouse_down="Images/manual-down.png" text_offset="-2,1" text_depress="1,2" fade=".2, .3, 0, 1" />				
+				<page_link     label="{TechnicalSupport}"        data="TechSupport.xml"      hotkey="*"            position="234,311" color="FFD823" image="Images/techsupport-off.png" 	mouse_over="Images/techsupport-over.png" 	mouse_down="Images/techsupport-down.png" text_offset="-2,-3" text_depress="1,2" fade=".25, .3, 0, 1" />
+				<exit_button   label="{ExitInstaller}"                                       hotkey="*" escape="1" position="234,362" color="FFD823" image="Images/exit-off.png" 			mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".3, .3, 0, 1" />
+						
+			</then><else>
+	
+				<!-- Allow the user to click and start up the game -->
+				<if false_condition="RestartRequired"><then>
+				
+					<launch_app_and_quit label="{PlayWorldOfWarcraft}" data="World of Warcraft/GamePath" hotkey="*" size="23" position="137,165" color="FFD823" image="Images/installbutton-off.png" mouse_over="Images/installbutton-over.png" mouse_down="Images/installbutton-down.png"  text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1"/>
+			
+					<file_link     label="{ViewTheReadme}"           data="Support/ReadMe.html"  hotkey="*"            position="234,235" color="FFD823" image="Images/readme-off.png" 		mouse_over="Images/readme-over.png" 		mouse_down="Images/readme-down.png" text_offset="-2,1" text_depress="1,2" fade=".15, .3, 0, 1" />
+					<file_link     label="{ViewTheManual}"           data="{ManualData}"         hotkey="*"            position="234,274" color="FFD823" image="Images/manual-off.png" 		mouse_over="Images/manual-over.png" 		mouse_down="Images/manual-down.png" text_offset="-2,1" text_depress="1,2" fade=".2, .3, 0, 1" />				
+					<page_link     label="{TechnicalSupport}"        data="TechSupport.xml"      hotkey="*"            position="234,311" color="FFD823" image="Images/techsupport-off.png" mouse_over="Images/techsupport-over.png" 	mouse_down="Images/techsupport-down.png" text_offset="-2,-3" text_depress="1,2" fade=".25, .3, 0, 1" />
+					<exit_button   label="{ExitInstaller}"                                       hotkey="*" escape="1" position="234,362" color="FFD823" image="Images/exit-off.png" 		mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".3, .3, 0, 1" />
+										
+					<!-- Allow the user to uninstall in Win32/Linux -->
+			        <if true_condition="Win32" or_true_condition1="Linux"><then>
+						<launch_app_and_wait label="{Uninstall}" data="World of Warcraft/UninstallPath" hotkey="*" color="FFD823" image="Images/exit-off.png" 			mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".25, .3, 0, 1" position="445,422" />
+					</then></if>
+
+				</then><else>
+					
+					<static_text  image="Images/techsupport-overlay.png" label="" position="0,0" />	
+					<static_text  label="{RestartRequired}"                                                 size="36" position="130,125" color="FFFFFF"/>
+					<static_text  label="{YouNeedToRestart1}"                                               size="18" position="130,175" color="FFD823"/>
+					<static_text  label="{YouNeedToRestart2}"                                               size="18" position="130,200" color="FFD823"/>
+					<file_link    label="{ViewTheReadme}"           data="Support/ReadMe.html"  hotkey="*"            position="234,240" color="FFD823" image="Images/readme-off.png" 		mouse_over="Images/readme-over.png" 		mouse_down="Images/readme-down.png" text_offset="-2,1" text_depress="1,2" fade=".15, .3, 0, 1" />
+					<file_link    label="{ViewTheManual}"           data="{ManualData}"         hotkey="*"            position="234,279" color="FFD823" image="Images/manual-off.png" 		mouse_over="Images/manual-over.png" 		mouse_down="Images/manual-down.png" text_offset="-2,1" text_depress="1,2" fade=".2, .3, 0, 1" />				
+					<page_link    label="{TechnicalSupport}"        data="TechSupport.xml"      hotkey="*"            position="234,316" color="FFD823" image="Images/techsupport-off.png" 	mouse_over="Images/techsupport-over.png" 	mouse_down="Images/techsupport-down.png" text_offset="-2,-3" text_depress="1,2" fade=".25, .3, 0, 1" />
+					<exit_button  label="{ExitInstaller}"                                       hotkey="*" escape="1" position="234,362" color="FFD823" image="Images/exit-off.png" 		mouse_over="Images/exit-over.png" 			mouse_down="Images/exit-down.png" text_offset="-2,-2" text_depress="1,2" fade=".3, .3, 0, 1" />
+							
+				</else></if>
+			
+			</else></if>
+	
+		</else></if>
+
+	</else></if>
+	
+	
+	<!-- Top layer animating widgets -->
+	<overlay page="Footer.xml" />
+
+	
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft Install Complete page -->
+
+<page backdrop="Images/CompletedBackdrop.jpg" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+	<!-- Play the completion sound and fade out the loop -->
+	<sound_play file="Audio/InstallComplete.wav" play_global="1" />
+	<sound_stop file="Audio/InstallLoop.wav" />
+	
+	<!-- After we've installed, launch the Launcher automatically so we can begin patching -->
+	<launch_app_on_page_load 	data="World of Warcraft/GamePath" />
+	
+	<static_text image="Images/warning-overlay.png"       position="400,100" align="center" fade=".05, .3, 0, 1" />
+	<static_text image="Images/wowlogo.png"               position="400,0" align="center" fade=".04, .3, 0, 1" />
+
+	<static_text          label="{InstallationComplete}"    size="{InstallationCompleteSize}"                                                               position="400,155" align="center" color="FFFFFF" fade=".06, .3, 0, 1" />
+
+	<static_text          label="{UpdateAnAccount1}"        size="{UpdateAnAccount1Size}"                                                               position="220,320"                color="C0C0C0" fade=".07, .3, 0, 1" />
+	<static_text          label="{UpdateAnAccount2}"        size="{UpdateAnAccount2Size}"                                                               position="220,335"                color="C0C0C0" fade=".07, .3, 0, 1" />
+
+	<url_link                                               size="{UpdateYourAccountURLSize}"           data="{UpdateYourAccountURL}"       hotkey="*"      position="400,360" align="center" color="FFD823" image="Images/upgrade-off.png" mouse_over="Images/upgrade-over.png" mouse_down="Images/upgrade-down.png" text_offset="0,-2" text_depress="0,0" fade=".1, .3, 0, 1"/>
+	
+	<static_text          label="{HaveAnAccountAlready1}"   size="{HaveAnAccountAlready1Size}"                                                               position="220,190"                color="C0C0C0" fade=".07, .3, 0, 1" />
+	<static_text          label="{HaveAnAccountAlready2}"   size="{HaveAnAccountAlready2Size}"                                                               position="220,205"                color="C0C0C0" fade=".07, .3, 0, 1" />
+	
+	<launch_app_and_quit                                    size="26"           data="World of Warcraft/GamePath"   hotkey="*"      position="400,230" align="center" color="FFD823" image="Images/play-off.png" mouse_over="Images/play-over.png" mouse_down="Images/play-down.png" text_offset="0,-2" text_depress="2,3" fade=".1, .3, 0, 1"/>
+	
+	<page_link                                              size="18"           data="MainPage.xml"                 hotkey="*"      position="16,511"                 color="FFD823" image="Images/back-off.png" mouse_over="Images/back-over.png" mouse_down="Images/back-down.png" text_offset="5,-2" text_depress="1,2" escape="1"/>
+	
+</page>

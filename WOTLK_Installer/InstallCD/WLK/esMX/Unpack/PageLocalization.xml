@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      Asistente de instalación de World of Warcraft: Wrath of the Lich King
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  Spanish
+
+UnableToInstall                               No se puede realizar la instalación
+YouNeedToBeAnAdminUser                        Debes ser el administrador para instalar Wrath of the Lich King.
+ClickHereForMoreInformation                   Haz clic aquí para obtener más |i|nformación
+NewerOperatingSystem1                         Wrath of the Lich King requiere un sistema operativo posterior al tuyo.
+NewerOperatingSystem2                         
+WindowsRequiredOS                             Se necesita Windows 2000, XP o superior.
+MacOSXRequiredOS                              Se necesita Mac OS X 10.3.9 o superior.
+
+WrongLocale1                                  Esta versión de Wrath of the Lich King solo es compatible con
+WrongLocale2                                  la versión en castellano (MX) de World of Warcraft.
+
+ChooseLanguages                               Elegir idiomas
+Language1                                     Inglés
+Language2                                     Español
+
+RestartRequired                               Debes reiniciar el ordenador
+YouNeedToRestart1                             Debes reiniciar tu ordenador antes
+YouNeedToRestart2                             de jugar a Wrath of the Lich King.
+
+FailedMinSpec1                                Tu ordenador no cumple con los
+FailedMinSpec2                                requisitos mínimos recomendados.
+NotEnoughRAM                                  No tienes suficiente memoria RAM (saber más)
+TooSlowCPU                                    Velocidad insuficiente de CPU (saber más)
+InstallAnyway                                 |I|nstalar igualmente
+SystemRequirementsURL						  http://eu.blizzard.com/support/article.xml?articleId=19752
+
+ViewTheReadme                                 Ver el archivo |L|éeme
+ViewTheManual                                 Ver el |M|anual
+TechnicalSupport                              Asistencia té|c|nica
+ExitInstaller                                 Salir |d|el Instalador
+InstallWorldOfWarcraft                        Instalar |W|rath of the Lich King
+PlayWorldOfWarcraft                           |J|ugar a Wrath of the Lich King
+Uninstall                                     D|e|sinstalar
+ManualData                                    Support/Manual_WLK.pdf
+TechSupportLink								  http://www.worldofwarcraft.com/support/
+
+InstallationComplete                          ¡Instalación completada!
+UpdateAnAccount1                              Si no has modificado tu cuenta de World of Warcraft, haz clic en el botón
+UpdateAnAccount2                              que se encuentra abajo. Debes modificar tu cuenta para registrarte y jugar. 
+UpdateYourAccount                             |M|odifica tu cuenta 
+UpdateYourAccountURL                          https://upgrade.worldofwarcraft.com/installer/index.xml?product=WLK&amp;locale=esMX&amp;trial=0&amp;promo=0
+HaveAnAccountAlready1                         Si ya has actualizado tu cuenta, haz clic en el botón de abajo
+HaveAnAccountAlready2                         para iniciar Wrath of the Lich King. 
+
+Back                                          |A|trás
+Cancel                                        Cancelar
+
+WoWRequired1                                  Necesitas World of Warcraft
+WoWRequired2                                  Instala World of Warcraft antes de instalar The Burning Crusade
+BCRequired1                                   Requiere World of Warcraft: The Burning Crusade
+BCRequired2                                   Instala World of Warcraft: The Burning Crusade antes de instalar Wrath of the Lich King
+BuyWoW                                        C|o|mprar World of Warcraft en línea
+BuyWoWURL                                     http://www.worldofwarcraft.com/buy
+BuyBC                                         C|o|mprar Burning Crusade en línea
+BuyBCURL                                      http://www.worldofwarcraft.com/buy
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

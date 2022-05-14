@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World of Warcraft Online Help</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue">
+			Problemas de sonido (PC)
+		</a>		
+        <p class="normal">A continuaci&oacute;n se describen los problemas de sonido m&aacute;s comunes. Si est&aacute;s teniendo un problema que no est&aacute; en la lista, o los pasos a seguir no te han ayudado, ponte en contacto con nuestro    
+        <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">departamento de soporte t&eacute;cnico</a>.
+        </p>
+
+        <p class="normal"><font class="small_header_blue">1. Algunos sonidos se reproducen mucho m&aacute;s fuertes que otros:</font> esto es debido a una configuraci&oacute;n inapropiada de las caracter&iacute;sticas de sonido. Este archivo puedes encontrarlo en el directorio WTF dentro de la carpeta World of Warcraft (/../WoW/WTF/Config.wtf).</p>  
+
+        <p class="normal"><font class="small_header_blue">2. El sonido decae hasta que no se puedo oir ning&uacute;n sonido:</font> intenta reinstalar 
+        <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=es&FamilyID=2da43d38-db71-4c1b-bc6a-9b6652cd92a3" class="menubox_header_white" target="_new">DirectX</a> y los &uacute;ltimos controladores para tu tarjeta de sonido. Es posible que alg&uacute;n programa haya modificado las opciones de DirectSound.</p>
+
+        <p class="normal"><font class="small_header_blue">3. No puedo escuchar ning&uacute;n sonido:&nbsp;</font> comprueba el archivo "Sound.log". Este registro se puede encontrar en el directorio ra&iacute;z de World of Warcraft. Si existen errores, env&iacute;a el registro y una descripci&oacute;n del problema al soporte t&eacute;cnico.
+        
+        <blockquote>
+            Ejemplo de un registro sin errores:
+            <br><br>
+	   SESound Engine Init
+		7/25 13:17:55.213   - FMOD Memory Init<br>
+		7/25 13:17:55.213   - FMOD System Create<br>
+		7/25 13:17:55.354   - FMOD version 00040907 detected<br>
+		7/25 13:17:55.354   - Hardware is DISABLED<br>
+		7/25 13:17:55.354   - Reverb is DISABLED<br>
+		7/25 13:17:55.354   - 2 Output drivers detected<br>
+		7/25 13:17:55.354   --- [0] System Default<br>
+		7/25 13:17:55.354   --- [1] Realtek HD Audio output<br>
+		7/25 13:17:55.369   - Using [0] System Default for Game Output<br>
+		7/25 13:17:55.369   - Using 32 channels.<br>
+		7/25 13:17:55.369   - DSPBufferSize = AUTO DETECT<br>
+		7/25 13:17:55.369   - Detected Control Panel Speaker Mode = STEREO<br>
+		7/25 13:17:55.369   - Setting WoW Speaker Mode to STEREO<br>
+		7/25 13:17:55.385   - FMOD System Init OK!<br>
+        </blockquote>
+
+        <p class="normal"><font class="small_header_blue">4. Sonidos extra&ntilde;os mientras juegas:&nbsp;</font>desinstala cualquier programa que pueda haber puesto codecs de sonido en el sistema (reproductores de video/sonido). Deshabilita cualquier otro software de sonido al jugar. Los reproductores MP3, por ejemplo, drenan recursos usados por World of Warcraft y pueden causar la corrupci&oacute;n del sonido.</p>
+        <p class="normal"><font class="small_header_blue">5. Audigy 2 se cuelga:</font> si est&aacute;s usando una Audigy 2 y experimentas cuelgues o reinicio del sistema, puede que debas reconfigurar la salida de sonido. Consulta en el directorio \SBAudigy2\Program\WDM\COMMON\ un archivo llamado "CtPanel.exe". Con esta herramienta podr&aacute;s modificar la configuraci&oacute;n del dispositivo. Debajo de “Speaker Settings”, cambia CMSS 3D Selection a “Off”.</p>
+        <p class="normal"><font class="small_header_blue">6. Rendimiento relacionado al sonido:&nbsp;</font>si est&aacute;s teniendo problemas de rendimiento en Windows, puede que quieras deshabilitar su tarjeta de sonido como prueba. Si el rendimiento mejora, deber&iacute;as contactar con nuestro <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">departamento de soporte t&eacute;cnico</a> para mejorar el rendimiento con el sonido habilitado.
+
+        <ul>
+            <li>Clic derecho en Mi PC y selecciona Propiedades.
+            <li>Los usuarios de Windows 2000 deben hacer clic en la pesta&ntilde;a de Hardware.
+            <li>Clic en Administrador de dispositivos.
+            <li>Expande la rama de Sonido, video y controladores de juegos.
+            <li>Selecciona la tarjeta de sonido y haz clic en el bot&oacute;n de Propiedades.
+            <li>Deshabilita el dispositivo.
+            <li>Haz clic en “Aceptar”.
+            <li>Reinicia tu computadora e inicia el juego de nuevo. 
+        </ul>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      World of Warcraft Installer
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  English
+
+UnableToInstall                               Unable to Install
+YouNeedToBeAnAdminUser                        You need to be an admin user to install World of Warcraft.
+ClickHereForMoreInformation                   Click here for more |i|nformation
+NewerOperatingSystem1                         World of Warcraft requires a newer operating
+NewerOperatingSystem2                         system to run.
+WindowsRequiredOS                             Windows 98, ME, 2000, XP or newer is required.
+MacOSXRequiredOS                              Mac OS X 10.3.9 or later is required.
+
+RestartRequired                               Restart Required
+YouNeedToRestart1                             You need to restart your computer before
+YouNeedToRestart2                             playing World of Warcraft.
+
+FailedMinSpec1                                Your computer fails to meet the
+FailedMinSpec2                                minimum system requirements.
+NotEnoughRAM                                  Not enough RAM (learn more)
+TooSlowCPU                                    Insufficient CPU Speed (learn more)
+InstallAnyway                                 |I|nstall Anyway
+
+ViewTheReadme                                 View the |R|eadme
+ViewTheManual                                 View the |M|anual
+TechnicalSupport                              |C|ustomer Support
+ExitInstaller                                 E|x|it Installer
+InstallWorldOfWarcraft                        Install |W|orld of Warcraft
+PlayWorldOfWarcraft                           Play |W|orld of Warcraft
+Uninstall                                     |U|ninstall
+ManualData                                    Support/Manual.pdf
+
+InstallationComplete                          Installation Complete!
+CreateAnAccount1                              If you are new to World of Warcraft, click the button below to
+CreateAnAccount2                              create an account. An account is necessary to login and play.
+CreateYourAccount                             |C|reate Your Account
+CreateYourAccountURL                          http://signup.worldofwarcraft.com
+HaveAnAccountAlready1                         If you already have an account, click the button below to
+HaveAnAccountAlready2                         launch World of Warcraft.
+
+Back                                          |B|ack
+Cancel                                        Cancel
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+InstalledVersion
+
+</localization>

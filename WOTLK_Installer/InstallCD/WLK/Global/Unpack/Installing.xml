@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft installing page -->
+
+<page title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="FFFFFF" color_down="FF0000">
+	
+	<!-- play the loop -->
+  <if true_condition="Win32">
+    <then>
+      <sound_play file="Audio/InstallLoop.wav" loop="true" start_volume="50" volume="50" end_volume="50" fadeout_duration="0" />
+    </then>
+  </if>
+
+  <if true_condition="MacOS">
+    <then>
+      <sound_play file="Audio/InstallLoop.wav" loop="true" start_volume="100" volume="100" end_volume="0" fadeout_duration="1000" />
+    </then>
+  </if>
+
+	<!-- start the slideshow -->
+	<slideshow image="Images/Slide1.jpg" position="0,0">
+		<slide image="Images/Slide2.jpg" />
+		<slide image="Images/Slide3.jpg" />
+		<slide image="Images/Slide4.jpg" />
+		<slide image="Images/Slide5.jpg" />
+		<slide image="Images/Slide6.jpg" />
+		<slide image="Images/Slide7.jpg" />
+		<slide image="Images/Slide8.jpg" />
+		<slide image="Images/Slide9.jpg" />
+		<slide image="Images/Slide10.jpg" />
+		<slide image="Images/Slide11.jpg" />
+		<slide image="Images/Slide12.jpg" />
+		<slide image="Images/Slide13.jpg" />
+		<slide image="Images/Slide14.jpg" />
+		<slide image="Images/Slide15.jpg" />
+		<slide image="Images/Slide16.jpg" />
+		<slide image="Images/Slide17.jpg" />
+		<slide image="Images/Slide18.jpg" />
+		<slide image="Images/Slide19.jpg" />
+		<slide image="Images/Slide20.jpg" />
+		<slide image="Images/Slide21.jpg" />
+		<slide image="Images/Slide22.jpg" />
+		<slide image="Images/Slide23.jpg" />
+		<slide image="Images/Slide24.jpg" />
+		<slide image="Images/Slide25.jpg" />
+		<slide image="Images/Slide26.jpg" />
+		<slide image="Images/Slide27.jpg" />
+		<slide image="Images/Slide28.jpg" />
+		<prev_slide hotkey="*"	size="14" position="10,130" color="FFD823" color_down="8BD2F9" image="Images/leftarrow-off.png" 			mouse_over="Images/leftarrow-over.png" 			mouse_down="Images/leftarrow-down.png" text_depress="2,2" fade=".3, .3, 0, 1" />	
+		<next_slide hotkey="*"	size="14" position="700,130" color="FFD823" color_down="8BD2F9" image="Images/rightarrow-off.png" 			mouse_over="Images/rightarrow-over.png" 			mouse_down="Images/rightarrow-down.png" text_depress="2,2" fade=".3, .3, 0, 1" />	
+	</slideshow>
+	
+	<progress_bar position="103,322"  image="Images/bar-empty.png" image_progress="Images/bar-full.png"/>
+	<percent_text size="{PercentTextSize}" position="400,326" color="FFFFFF" align="center" />
+	<progress_text size="{ProgressTextSize}" position="180,359" color="FFFFFF"/>
+	<static_text image="Images/installingtext.png" position="400,285" align="center" />
+	<cancel_install label="{Cancel}" hotkey="*"	size="14" position="595,511" color="FFD823" color_down="8BD2F9" image="Images/smallbutton-off.png" 			mouse_over="Images/smallbutton-over.png" 			mouse_down="Images/smallbutton-down.png" text_depress="2,2" fade=".3, .3, 0, 1" />	
+
+</page>

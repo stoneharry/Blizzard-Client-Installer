@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft main installer page -->
+
+<page backdrop="Images/background2.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+	<!-- Bottom layer animating widgets -->
+	<overlay page="Header.xml" />
+	
+	<static_text image="Images/checkbox-overlay.png" position="400,50" align="center" fade=".05, .3, 0, 1"/>
+	
+	<static_text label="{ChooseLanguages}"	size="{UnableToInstallSize}" position="400,180" align="center" color="FFFFFF" fade=".1, .3, 0, 1" />
+	
+	<!-- first column -->
+	<static_text label="{Language1}" size="18"  position="250,230" text_offset="48,0" color="CCCCCC" image="Images/checkbox_disabled.png" fade=".15, .3, 0, 1" />
+	<!-- second column -->
+	<check_box label="{Language2}"	data="esMX/install-esMX"	hotkey="*"	size="18"	position="425,230" color="FFD823" color_down="FFFFFF" image="Images/checkbox_normal.png" image_selected="Images/checkbox_selected.png" image_over="Images/checkbox_mouseOver.png" image_selected_over="Images/checkbox_selectedOver.png" image_down="Images/checkbox_selectedDown.png" fade=".15, .3, 0, 1"/>
+	
+	<begin_install	data="MainInstall,{LanguageCode}" next_page="InstallingPrep.xml" hotkey="*" size="14" position="300,400" align="center" color="FFD823" image="Images/okwotlk-off.png" mouse_over="Images/okwotlk-over.png" mouse_down="Images/okwotlk-down.png" text_offset="5,-2" text_depress="1,2" fade=".2, .3, 0, 1" />
+	<page_link                      data="MainPage.xml"         	hotkey="*"  size="14"	position="500,400" align="center" color="FFD823" image="Images/back2wotlk-off.png" mouse_over="Images/back2wotlk-over.png" mouse_down="Images/back2wotlk-down.png" text_offset="5,-2" text_depress="1,2" escape="1" fade=".2, .3, 0, 1" />
+	
+	<!-- Top layer animating widgets such as the product logo. -->
+	<static_text image="Images/wowlogo.png" label="" position="248,0" />
+	<static_text label="{DisplayedInstallerVersion}" align="center" position="72,542" size="10" color="FFD823" />
+
+</page>

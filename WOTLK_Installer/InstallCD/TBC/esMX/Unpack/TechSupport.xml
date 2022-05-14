@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft tech support page -->
+
+<page backdrop="Images/TechSupportBackdrop.jpg" color_over="ffffff" color_down="FF0000">
+
+	<static_text image="Images/techsupport-overlay.png" label="" position="0,0" fade=".05, .3, 0, 1"/>
+	<static_text image="Images/wowlogo.png" label="" position="193,15" fade=".04, .3, 0, 1"/>
+
+	<static_text   label="Servicio de atención en línea:"                                                           position="115,135" size="20" color="FFFFFF" font="{Font}" fade=".06, .3, 0, 1"/>
+
+	<static_text   label="Asistencia técnica PC/Mac:"                                                               position="130,160" color="C0C0C0" size="12" fade=".07, .3, 0, 1" />
+	<static_text   label="Facturación y cuentas:"                                                                   position="130,180" color="C0C0C0" size="12" fade=".08, .3, 0, 1" />
+	<static_text   label="Asistencia Web:"                                                                          position="130,200" color="C0C0C0" size="12" fade=".08, .3, 0, 1" />
+
+	<url_link      label="wow|t|ech@blizzard.com"               	 data="mailto:wowtech@blizzard.com"             hotkey="*" position="310,160" color="FFD823" size="13" fade=".09, .3, 0, 1" />
+	<url_link      label="b|i|lling@blizzard.com"        data="mailto:billing@blizzard.com"             hotkey="*" position="310,180" color="FFD823" size="13" fade=".09, .3, 0, 1" />
+	<url_link      label="http://www.worldofwarcraft.com/|s|upport"  data="http://www.worldofwarcraft.com/support"  hotkey="*" position="230,200" color="FFD823" size="13" fade=".1, .3, 0, 1" />
+
+	<static_text   label="Servicio de atención telefónica:"                                                     position="115,230" size="20" color="FFFFFF" font="{Font}" fade=".06, .3, 0, 1" />
+
+	<static_text   label="Asistencia técnica: 949-955-1382"                                                     position="130,255" size="12" color="FFFFFF" fade=".11, .3, 0, 1" />
+	<static_text   label="Facturación y cuentas: 949-955-0283"                                                  position="130,320" size="12" color="FFFFFF" fade=".11, .3, 0, 1" />
+
+	<page_link     label="|A|trás"                               data="MainPage.xml"               hotkey="*"   position="20,430" size="15" color="FFD823" escape="1" font="{Font}" image="Images/smallbutton-off.png" mouse_over="Images/smallbutton-over.png" mouse_down="Images/smallbutton-down.png" text_offset="0,0" text_depress="1,2" />
+
+</page>

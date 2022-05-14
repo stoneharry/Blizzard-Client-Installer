@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<product_data>
+ProductLocaleCode                  enUS
+ProductName                        World of Warcraft
+LogFileName                        Logs/World of Warcraft Install Log
+OriginalInstallPathRegistryKey     World of Warcraft/InstallPath
+StartMenuFolderName                World of Warcraft
+Win32_SuggestedRAM                 512
+MacOS_SuggestedRAM                 512
+Intel_SuggestedMHz                 800
+PowerPC_SuggestedMHz               933
+Win9x_SupportedOS                  4,10        #  95:4,0  98:4,10  ME:4,90  # World of Warcraft will install on 98/ME even though it is not officially supported
+WinNT_SupportedOS                  5,0         # NT4:4,0  2K:5,0   XP:5,1
+MacOS_SupportedOS                  1039        # XXYZ = XX.Y.Z
+CanCreateDesktopShortcut           1
+MustInstallInExistingFolder        0
+AppendToInstallLocation            World of Warcraft
+#MacOS_BaseInstallLocation         # using the default value
+#Win32_BaseInstallLocation         # using the default value
+MacOS_InstallerData                World of Warcraft Disc 1:World of Warcraft Disc 1:Installer Tome.mpq
+Win32_InstallerData                World of Warcraft Disc 1:WoWDisc1:Installer Tome.mpq
+ProgressBarInMainWindow            1
+</product_data>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcdkey>
+###
+###  Localized strings for platform specific code
+###
+Upgrade                             Aceptar
+UpgradeAnother                      Modificar otra
+IntroTitle                          ACTUALIZAR TU CUENTA A WRATH OF THE LICK KING
+IntroDiscussion1                    ¡Gracias por instalar World of Warcraft: Wrath of the Lich King!
+IntroDiscussion2                    Antes de jugar deberás entrar en la página de Gestión de la cuenta para actualizar tu cuenta. Es un procedimiento muy rápido y la instalación continuará realizándose en segundo plano. Haz clic en "Aceptar" para ir a la página de Gestión de la cuenta.
+DataEntryTitle                      Introduce la información de tu cuenta de World of Warcraft y tu clave de autentificación de Wrath of the Lich King.
+AccountLabel                        Cuenta:
+PasswordLabel                       Contraseña:
+KeyLabel                            Clave:
+DontShareKeys                       No compartas tu clave de autentificación. Esta clave de autentificación solo sirve para modificar una cuenta.
+UpgradeInProgressTitle              Estamos modificando tu cuenta.
+UpgradeSuccessfulTitle              Tu cuenta se ha modificado.
+UpgradeFailedTitle                  No se ha podido modificar tu cuenta.
+###
+###  Localized strings for cross-platform code
+###
+ConnectingToBlizzard                Conectando con Blizzard...
+UpgradingAccount                    Modificando cuenta...
+InvalidKey                          Esta clave de autentificación no es válida.
+InvalidAccount                      Cuenta o contraseña no válida.
+AlreadyUpgraded                     Esta cuenta ya se ha modificado.
+AccountIneligible                   Esta cuenta no se puede modificar.
+ServiceUnavailable                  El servidor no puede procesar tu solicitud en este momento. Inténtalo de nuevo más tarde.
+UpgradeSuccessful                   Se ha modificado la cuenta.
+ServerError                         Error de servidor:
+UnableToConnect                     Es imposible conectarse. 
+###
+###  Tag for UI display selection
+###     LocalAuth -> Series of network auth key windows
+###     WebAuth -> Single popup asking to simply kick out to website
+###
+AuthUIType                          WebAuth
+###
+###  Data for cross-platform code
+###
+AccountRegistrationURL              https://upgrade.worldofwarcraft.com/installer/index.xml
+CheckAccountRegistrationURL         https://upgrade.worldofwarcraft.com/installer/status.xml
+</netcdkey>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft installing page -->
+
+<page backdrop="Images/installerprep.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+	<!-- empty -->
+
+</page>

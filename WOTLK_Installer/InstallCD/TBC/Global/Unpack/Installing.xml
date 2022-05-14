@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft installing page -->
+
+<page backdrop="Images/installerbg.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="FFFFFF" color_down="FF0000">
+	
+	<progress_text size="14" position="115,239" color="FFFFFF"/>
+	<progress_bar position="28,202"  image="Images/bar-empty.png" image_progress="Images/bar-full.png"/>
+	<percent_text size="16" position="302,205" color="FFFFFF"/>
+	<static_text image="Images/installingtext.png" position="320,167" align="center" />
+	<static_text image="Images/smallbutton-off.png"	size="14" label="{Cancel}" color="999999" position="466,430" text_offset="1,0" />
+	<cancel_install label="{Cancel}" hotkey="*"	size="14" position="466,430" color="FFD823" image="Images/smallbutton-off.png" mouse_over="Images/smallbutton-over.png" mouse_down="Images/smallbutton-down.png" text_offset="1,0" text_depress="1,2" fade=".3, .3, 0, 1" />
+
+</page>

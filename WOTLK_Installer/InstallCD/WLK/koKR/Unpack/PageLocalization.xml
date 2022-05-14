@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      월드 오브 워크래프트: 리치 왕의 분노 설치 프로그램
+
+Font                                          2002.TTF
+LanguageCode                                  Korean
+
+UnableToInstall                               설치할 수 없습니다.
+YouNeedToBeAnAdminUser                        리치 왕의 분노를 설치하려면 관리자 권한이 있어야 합니다.
+ClickHereForMoreInformation                   자세한 정보는 여기를 클릭하십시오. (|I|)
+NewerOperatingSystem1                         리치 왕의 분노를 실행하려면 최신 운영 체제가 있어야 합니다.
+NewerOperatingSystem2                         
+WindowsRequiredOS                             Windows 2000, XP 이상이 필요합니다.
+MacOSXRequiredOS                              Mac OS X 10.3.9 이상이 필요합니다.
+
+WrongLocale1                                  현재 버전의 리치 왕의 분노는 
+WrongLocale2                                  영어(US) 버전의 월드 오브 워크래프트와만 호환됩니다.
+
+RestartRequired                               재시작 필요
+YouNeedToRestart1                             리치 왕의 분노를 플레이하려면
+YouNeedToRestart2                             컴퓨터를 재시작해야 합니다.
+
+FailedMinSpec1                                컴퓨터가 시스템 최소 요구 사항을
+FailedMinSpec2                                충족하지 못합니다.
+NotEnoughRAM                                  RAM 부족(자세히)
+TooSlowCPU                                    CPU 속도 부족(자세히)
+InstallAnyway                                 설치 진행(|I|)
+SystemRequirementsURL						  http://kr.blizzard.com/support/article.xml?articleId=18433
+
+ViewTheReadme                                 도움말 보기(|R|)
+ViewTheManual                                 매뉴얼 보기(|M|)
+TechnicalSupport                              고객 지원(|C|)
+ExitInstaller                                 설치 프로그램 종료(|X|)
+InstallWorldOfWarcraft                        리치 왕의 분노 설치(|W|)
+PlayWorldOfWarcraft                           리치 왕의 분노 플레이(|P|)
+Uninstall                                     삭제(|U|)
+ManualData                                    Support/Manual_WLK.pdf
+TechSupportLink								  http://www.worldofwarcraft.co.kr/support/
+
+InstallationComplete                          설치가 완료되었습니다!
+UpdateAnAccount1                              접속 및 플레이를 하시려면 계정을 업그레이드하셔야 합니다. 아직 하지
+UpdateAnAccount2                              않으셨다면 아래 버튼을 클릭하여 업그레이드를 진행해주시기 바랍니다.
+UpdateYourAccount                             계정 업그레이드 (|U|)
+UpdateYourAccountURL                          http://beta.worldofwarcraft.co.kr/expansion/
+HaveAnAccountAlready1                         계정을 갱신했으면 아래 버튼을 눌러
+HaveAnAccountAlready2                         리치 왕의 분노를 실행하십시오.
+
+Back                                          뒤로(|B|)
+Cancel                                        취소
+
+WoWRequired1                                  월드 오브 워크래프트 필요
+WoWRequired2                                  불타는 성전을 설치하려면 월드 오브 워크래프트가 설치되어 있어야 합니다.
+BCRequired1							 		  월드 오브 워크래프트: 불타는 성전이 필요합니다.
+BCRequired2									  리치 왕의 분노를 설치하기 전 월드 오브 워크래프트: 불타는 성전을 설치하십시오.
+BuyWoW                                        월드 오브 워크래프트 다운로드(|D|)
+BuyWoWURL                                     http://www.worldofwarcraft.co.kr/data/client/
+BuyBC
+BuyBCURL									  http://www.worldofwarcraft.co.kr/data/client/
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+</localization>

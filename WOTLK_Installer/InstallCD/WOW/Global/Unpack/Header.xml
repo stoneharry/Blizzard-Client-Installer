@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+	<static_text image="Images/eyes-left.mng" position="130,152" />
+	<static_text image="Images/eyes-right.mng" position="449,108" />
+	<static_text image="Images/flames-left.mng" position="12,309" />
+	<static_text image="Images/flames-right.mng" position="452,279" />
+</page>

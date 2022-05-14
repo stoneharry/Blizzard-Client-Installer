@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcdkey>
+###
+###  Localized strings for platform specific code
+###
+Upgrade                             Upgrade
+UpgradeAnother                      Upgrade Another
+IntroTitle                          Do you want to upgrade an existing World of Warcraft account to a Burning Crusade account?
+IntroDiscussion1                    By clicking Upgrade, you will be prompted to enter your World of Warcraft account information and a Burning Crusade Authentication Key.
+IntroDiscussion2                    If you have already upgraded your account or do not wish to upgrade at this time, click Skip. Your account must be upgraded before you can play Burning Crusade.
+DataEntryTitle                      Please enter your World of Warcraft account information and Burning Crusade Authentication Key.
+AccountLabel                        Account:
+PasswordLabel                       Password:
+KeyLabel                            Key:
+DontShareKeys                       Do not share your Authentication Key with others. This Authentication Key can only be used to upgrade a single account.
+UpgradeInProgressTitle              Your account is being upgraded.
+UpgradeSuccessfulTitle              Your account has been upgraded.
+UpgradeFailedTitle                  Your account could not be upgraded.
+###
+###  Localized strings for cross-platform code
+###
+ConnectingToBlizzard                Connecting to Blizzard...
+UpgradingAccount                    Upgrading account...
+InvalidKey                          This Authentication Key is not valid.
+InvalidAccount                      Invalid account or password.
+AlreadyUpgraded                     This account has already been upgraded.
+AccountIneligible                   This account is not eligible for an upgrade.
+ServiceUnavailable                  The server is unable to process your request at this time. Please try again later.
+UpgradeSuccessful                   The account upgrade is complete.
+ServerError                         Server Error:
+UnableToConnect                     Unable to make a connection. 
+###
+###  Data for cross-platform code
+###
+AccountRegistrationURL              https://upgrade.worldofwarcraft.com/expansion/installer/upgradeAccount.xml?accountName={Account}&amp;accountPassword={Password}&amp;key={Key}
+CheckAccountRegistrationURL         https://upgrade.worldofwarcraft.com/expansion/installer/status01.xml
+</netcdkey>

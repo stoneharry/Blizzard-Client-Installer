@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- World of Warcraft main installer page -->
+
+<page backdrop="Images/TechSupportBackdrop.jpg" title="{WorldOfWarcraftInstaller}" font="{Font}" color_over="ffffff" color_down="FF0000">
+
+	<static_text image="Images/techsupport-overlay.png" position="400,0" align="center"/>
+	<static_text image="Images/alert.png" position="215,173" />
+	
+	<static_text label="{FailedMinSpec1}" position="275,178" size="{FailedMinSpec1Size}" color="ffffff" />
+	<static_text label="{FailedMinSpec2}" position="275,198" size="{FailedMinSpec2Size}" color="ffffff" />
+	
+	<if false_condition="EnoughRAM">
+      <!-- Point to readme file until we get all the proper URLs -->
+      <!--  <url_link   label="{NotEnoughRAM}" data="{SystemRequirementsURL}" size="{NotEnoughRAMSize}" position="255,240" color="FFD823"/> -->
+ 	  <file_link  label="{NotEnoughRAM}" data="Support/ReadMe.html" size="{TooSlowCPUSize}" position="255,240" color="FFD823"/>
+	  <static_text image="Images/bullet.png" position="230,242" />
+	</if>
+	
+	<if false_condition="EnoughCPU">
+      <!-- Point to readme file until we get all the proper URLs -->
+	  <!-- <url_link   label="{TooSlowCPU}" data="{SystemRequirementsURL}" size="{TooSlowCPUSize}" position="255,265" color="FFD823"/> -->
+	  <file_link  label="{TooSlowCPU}" data="Support/ReadMe.html" size="{TooSlowCPUSize}" position="255,265" color="FFD823"/>
+	  <static_text image="Images/bullet.png" position="230,267" />
+	</if>	
+	
+	<page_link   hotkey="*" data="MainPage.xml" position="215,350" color="FFD823" image="Images/installer2wotlk-off.png" 	mouse_over="Images/installer2wotlk-over.png" 			mouse_down="Images/installer2wotlk-down.png" text_offset="-2,-2" text_depress="1,2" />
+	<exit_button hotkey="*" escape="1" position="395,350" color="FFD823" image="Images/exit2wotlk-off.png" 			mouse_over="Images/exit2wotlk-over.png" 			mouse_down="Images/exit2wotlk-down.png" text_offset="-2,-2" text_depress="1,2" />
+
+	<static_text image="Images/logo.mng" position="400,0" fade=".05, .3, 0, 1" align="center" />
+	
+</page>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World of Warcraft: Wrath of the Lich King Online Help</title>
+</head>
+<body onload=detection() >
+	<div class="topicText">
+		<a name="Head" class="large_header_blue">
+			Startup Problems (PC)
+		</a>		
+        <p>The following are some of the most common errors related to the initialization of the program. Many problems that occur on startup are related to corrupt data files. If you are experiencing a problem that is not listed below, or the steps listed do not resolve the problem, please 
+        <a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">contact Technical Support</a>.
+        </p>
+
+        <p class="normal"><font class="small_header_blue">1. The installation never starts, or halts:&nbsp;</font>Please try running in a <a href="http://us.blizzard.com/support/article.xml?articleId=21052" class="menubox_header_white"  target="_new">selective startup</a> to make sure no background applications are conflicting with the game, and temporarily disable any security software you may have running. Antivirus programs scan files as they are downloading, and this scanning can cause delays that stall the download process. Also, double-check that your system meets the minimum requirements for <a href="../Readme/(PC)SystemRequirements.html" class="menubox_header_white">World of Warcraft: Wrath of the Lich King</a>.</p>
+
+        <p class="normal"><font class="small_header_blue">2. The program crashes with an error #131:</font> This error indicates that there was a problem decompressing a file from the game package. This can occur during the decompression that occurs during installation, or during the decompression that occurs during gameplay, so #131 errors are possible at either time. There are two possible sources of the problem: the package of files on your computer is partially corrupt, or the computer hardware is failing to perform the decompression correctly. You should start with a simple uninstallation and reinstallation of the game files. If the problem persists, the problem may be with your hardware, and you should  
+		<a href="../Support/(PC)TechnicalSupport.html" class="menubox_header_white">contact Technical Support</a>
+		for more help. Contact information is found in Section G, at the end of this document.
+        </p>
+
+        <p class="normal"><font class="small_header_blue">3. The program crashes when started:</font> After checking that your computer meets the minimum system requirements, make sure all your computer's drivers are up to date. Then, uninstall the program and perform a full reinstall.</p>
+
+        
+        <p class="normal"><font class="small_header_blue">4. The game crashes, and an error describing an .MPQ file appears:&nbsp;</font>
+        <blockquote>(an example)<br>
+            ERROR #131 (0x85100083) <br>
+            Program: C:\Temp\wowupdater\WoW Friends & Family\Wow.exe <br>
+            File: .\Data\World\Maps\Kalimdor\Kalimdor.wdt.MPQ 
+        </blockquote>
+        
+        <p class="normal">An error resulting from an .MPQ file means that the file listed has become altered or corrupted. To resolve this problem, please uninstall World of Warcraft: Wrath of the Lich King and then reinstall it so that all game files are replaced with fresh versions. </p>
+
+        <p class="normal"><font class="small_header_blue">5. An error in the DBCache appears when trying to start or play the game:&nbsp;</font>
+        <blockquote>(an example)<br>
+            ERROR #0 (0x85100000) <br>
+            Program: C:\ wow\ \WowClient.exe <br>
+            File: D:\build\buildWoW\WoW\Source\DB\DBClient\DBCache.cpp <br>
+            Line: 289 
+        </blockquote>
+        <p class="normal">An error resulting from DBCache.cpp means that one or more of the cache files have become altered or corrupted. Once these files are removed, new versions of them will be created the next time the game is launched. These files are located inside the Cache folder, which is inside the root folder for the game. You can safely delete the entire Cache folder before retrying the game.</p>
+
+        <p class="normal"><font class="small_header_blue">6. Despite working previously, World of Warcraft: Wrath of the Lich King crashes every time it is started:</font>  Try deleting the contents of the WTF and Cache folders in World of Warcraft's root directory. Also, something may have corrupted your game files. You should check your computer for a virus using an antiviral program. Please visit <a href="http://us.blizzard.com/support/article.xml?articleId=21118" class="menubox_header_white"  target="_new">our website</a> for more information on viruses and trojans. 
+        <p class="normal">If you are experiencing this problem and you are running the game on Windows 98 or ME, you should read the information available
+        <a href="http://us.blizzard.com/support/article.xml?articleId=21034" class="menubox_header_white"  target="_new">here</a>.
+        </p>
+</body>
+</html>

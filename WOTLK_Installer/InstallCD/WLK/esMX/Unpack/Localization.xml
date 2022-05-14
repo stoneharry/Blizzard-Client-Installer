@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization>
+%.1fGB                                        %1$.1f GB
+%.1fMB                                        %1$.1f MB
+%sAlreadyInstalled                            %1$s ya se ha instalado en esta carpeta. Elige otra carpeta. 
+%sCDKey                                       %1$s Clave de CD:
+%sExpectedVersion%d.%d.%d.%d                  Esta actualización necesita "%1$s" versión %2$d.%3$d.%4$d.%5$d.
+%sExpectedVersion%d.%d.%d.%dExactlyButYouHaveNewer%d.%d.%d.%d   Esta actualización no se necesita instalar. Necesita la versión %2$d.%3$d.%4$d.%5$d de "%1$s", pero ya tienes la versión %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dExactlyButYouHaveOlder%d.%d.%d.%d   Esta actualización necesita "%1$s" versión %2$d.%3$d.%4$d.%5$d. Tienes una versión anterior, %6$d.%7$d.%8$d.%9$d.
+%sExpectedVersion%d.%d.%d.%dOrNewer                        El Asistente de instalación requiere la versión %2$d.%3$d.%4$d.%5$d o posterior de "%1$s".
+%sExpectedVersion%d.%d.%d.%dOrNewerButYouHave%d.%d.%d.%d   El Asistente de instalación requiere la versión %2$d.%3$d.%4$d.%5$d o posterior de "%1$s".  Tienes la %6$d.%7$d.%8$d.%9$d que es una versión más antigua.
+%sExpectedVersion%d.%d.%d.%dOrOlderButYouHave%d.%d.%d.%d   No es necesario ejecutar el Asistente de instalación. Se requiere una versión de  "%1$s" más antigua que %2$d.%3$d.%4$d.%5$d, pero ya tienes la versión %6$d.%7$d.%8$d.%9$d. 
+%sNotExpectingVersion%d.%d.%d.%d              Esta actualización necesita la versión "%1$s", no %2$d.%3$d.%4$d.%5$d.
+AboutToUninstall%s                            Haz clic en Desinstalar para desinstalar %1$s si estás seguro.
+Agree                                         &amp;Aceptar
+AuthenticationKey                             Clave de autentificación:
+Back                                          &amp;Atrás
+BrokenExtensionHintPDF                        Quizás necesites instalar Adobe Reader para ver este archivo. Para más información, visita http://www.adobe.com/es/products/acrobat/readstep2.html.
+Cancel                                        &amp;Cancelar
+CannotInstallInSystemDirectory                El Asistente de instalación no puede instalarse en un directorio de sistema. Instálalo en otra carpeta. 
+CantInstall%sOnCaseSensitiveVolume            No se puede instalar %s en un volumen que distingue mayúsculas de minúsculas.
+CDKeyTitle							 Clave de CD
+CertainDiskHas%sButNeeds%sToInstall%s         No hay suficiente espacio en este disco para instalar %1$s. (Se necesitan más de %3$s, solo hay %2$s disponibles.) Libera espacio.
+Choose                                        &amp;Elegir
+CleaningUp                                    Limpiando...
+ClickRepairButton                             Para corregir los errores de instalación, haz clic en el botón Reparar. La herramienta de reparación puede solucionar automáticamente muchos problemas de actualización.
+Close                                         Cerrar
+ConfirmAgreement                              ¿Estás de acuerdo con las condiciones?
+ConflictWarning                               Puede que haya problemas durante la instalación. ¿Continuar de todas formas?
+ContactTechSupport                            Si el problema se repite, ponte en contacto con el servicio de asistencia técnica de Blizzard.
+CouldntCreateFile%s                           No se ha podido crear el archivo "%1$s".
+CouldntCreateFolder%s                         No se ha podido crear la carpeta "%1$s".
+CouldntCreateRegistryKey%s%s                  No se ha podido crear la clave de registro "Blizzard Entertainment\%1$s\%2$s".
+CouldntCreateShortcut%s                       No se ha podido crear un acceso directo al archivo "%1$s".
+CouldntGetReadWritePermissionFor%s            No se ha podido eliminar el archivo "%s" porque está bloqueado o alguien lo está usando.
+CouldntOpenFile                               No se ha podido abrir un archivo.
+CouldntOpenFile%s                             No se ha podido abrir el archivo "%1$s".
+CouldntOpenURL%s                              No se ha podido abrir la URL "%1$s". Intenta abrirla en un navegador.
+CouldntRename%sTo%s                           No se ha podido renombrar el archivo "%1$s" a "%2$s".
+CreatedShortcut%s                             Se ha creado el acceso directo "%1$s".
+DeletedFile%s                                 Se ha eliminado el archivo "%1$s".
+DeletedFolder%s                               Se ha eliminado la carpeta "%1$s".
+Disagree                                      &amp;Rechazar
+DiskHas%sButNeeds%sToInstall%s                No hay suficiente espacio en este disco para instalar %1$s. (Se necesitan más de %3$s, solo hay %2$s disponibles.) Libera espacio o elige otro disco para la instalación.
+DiskIsTooFullFor%s                            No hay suficiente espacio en este disco para instalar %1$s. Libera espacio.
+DontShareAuthenticationKeys                   No compartas tu clave de autentificación con nadie. Si lo haces, se podría proceder a la cancelación de tu cuenta y a la eliminación de tus personajes.
+DontShareCDKeys                               No compartas tu clave de CD con nadie. Solo puede estar conectada una persona a Battle.net a la vez con una clave de CD.
+EndUserLicenseAgreement                       Acuerdo de licencia de usuario final
+EnterAuthenticationKey%d                      Introduce tu clave de %1$d caracteres de autentificación.
+EnterGameCDKey%dFromCase                      Introduce la clave de CD de %1$d caracteres que figura en la caja del juego.
+EnterGameOwnerName                            Introduce el nombre del dueño de este juego.
+Error                                         Error
+Error%dClosing%s                              Se ha producido un error %1$d al intentar cerrar el archivo "%2$s".
+Error%dCreating%sWith%dBytes                  No se ha podido crear el archivo "%2$s" (%3$d bytes) porque se ha producido un error %1$d.
+Error%dGettingSizeOf%s                        No se ha podido determinar el tamaño del archivo "%2$s" porque se ha producido un error %1$d.
+Error%dOpening%s                              Se ha producido un error %1$d al intentar abrir el archivo "%2$s".
+Error%dOpening%sInArchive%s                   Se ha producido un error %1$d al intentar abrir el archivo "%2$s" en la carpeta "%3$s".
+Error%dReading%s                              No se ha podido leer el archivo "%2$s" porque se ha producido un error %1$d.
+Error%dWriting%s                              No se ha podido modificar el archivo "%2$s" porque se ha producido un error %1$d.
+Error%sCreating%sWith%dBytes                  No se ha podido crear el archivo "%2$s" (%3$d bytes) porque se ha producido un error: %1$.
+ErrorApplyingPatch%s                          No se ha podido aplicar el parche "%1$s".
+ErrorDeletingFile%s                           No se ha podido borrar el archivo "%1$s".
+ErrorDeletingFolder%s                         No se ha podido borrar la carpeta "%1$s".
+ErrorInstallingDirectX                        Se ha producido un error al intentar instalar DirectX.
+ErrorReading%s                                No se ha podido leer el archivo "%1$s".
+ErrorRemovingRegistryKey%s%s                  No se ha podido eliminar la clave de registro "Blizzard Entertainment\%1$s\%2$s".
+ErrorVerifying%sonDisk%s                      Se ha detectado un error mientras se verificaba el contenido del archivo "%1$s". Puede que haya un error en tu sistema operativo o en la unidad en %2$s. Prueba a reinstalarlo todo. 
+ErrorWriting%s                                No se ha podido modificar el archivo "%1$s".
+File%sAlreadyExists                           Ya existe un archivo con el nombre "%1$s".
+File%sAlreadyOpenedAs%s                       No se puede abrir el archivo "%1$s" porque ya está abierto como "%2$s".
+File%sIsCorrupt                               Los datos del archivo "%1$s" están dañados.
+File%sIsOver4GB                               No se esperaba que el archivo "%1$s" fuera mayor a 4GB.
+File%sIsReadOnly                              El archivo "%1$s" es de solo lectura y no se puede sobrescribir. Elige otra carpeta.
+File%sNotFound                                No se ha podido encontrar el archivo "%1$s".
+File%sWillBeOverwritten                       Se va a sobrescribir el archivo "%1$s".
+FilesMayBeLeftBehind                          Se ha detenido el Asistente pero algunos archivos se pueden haber quedado en el disco.
+FilesMustBeClosed                             La instalación continuará cuando se hayan cerrado todos los archivos.
+Folder%sAlreadyExists                         Ya existe una carpeta con el nombre "%1$s".
+Folder%sNotFound                              No se ha podido encontrar la carpeta "%1$s".
+FolderContentsWillBeErased                    Se eliminará todo el contenido de esta carpeta.
+IncorrectInformation                          La información introducida no es correcta.
+Install                                       &amp;Instalar
+InstallationIsLocale%sButPatchIsForLocale%s   Esta actualización requiere la versión "%2$s" de este software. Ahora está instalada la versión "%1$s". 
+InstallCanceled                               La instalación se ha cancelado.
+InstalledFile%s                               Se ha instalado el archivo "%1$s".
+InstalledFolder%s                             Se ha instalado la carpeta "%1$s".
+InstalledWithWarnings                         La instalación se ha completado con las siguientes advertencias:
+Installer                                     Asistente de instalación
+InstallerCouldntInitialize                    El Asistente de instalación no se ha podido iniciar.
+InstallFailed                                 Se ha producido un error durante la instalación.
+Installing%s                                  Instalando "%1$s"...
+Installing%sTo%sOn%s                          Instalando %1$s en "%2$s" en %3$s.
+InstallingWebPageTitle                        Actualizar cuenta
+InstallSuccessful                             El Asistente de instalación ha finalizado correctamente.
+InvalidAuthenticationKey                      La clave de autentificación introducida no es válida. Asegúrate de escribirla correctamente.
+InvalidCDKeyFor%s                             La clave de CD introducida en el campo %1$s no es válida. Asegúrate de escribirla correctamente.
+InvalidUserName                               Introduce un nombre válido. Los nombres de usuario no pueden exceder los 31 caracteres.
+Linux_PathPrompt                              Introduce la ruta de instalación para %1$s (se necesitan %2$s de espacio).
+MacOS_%sWillBeInstalledInto                   %1$s se instalará en:
+MacOS_AvailableDiskSpace                      Espacio en disco disp.:
+MacOS_InstallationSize                        Tamaño de la instalación:
+MeaningOfExtensionADT                         datos de terreno
+MeaningOfExtensionBLP                         datos de textura
+MeaningOfExtensionDBC                         información de la base de datos
+MeaningOfExtensionLUA                         datos de interfaz
+MeaningOfExtensionM2                          datos de modelo
+MeaningOfExtensionMP3                         efectos de sonido
+MeaningOfExtensionSBT                         datos de interfaz
+MeaningOfExtensionSIG                         datos de interfaz
+MeaningOfExtensionTOC                         datos de interfaz
+MeaningOfExtensionTTF                         datos de fuente
+MeaningOfExtensionWAV                         efectos de sonido
+MeaningOfExtensionWDL                         datos de terreno
+MeaningOfExtensionWDT                         datos de terreno
+MeaningOfExtensionWMO                         datos de objeto del mundo
+MeaningOfExtensionXML                         datos de interfaz
+MeaningOfExtensionXSD                         datos de interfaz
+MediaError%dReading%sin%sonDisk%s             El Asistente de instalación no ha podido leer el archivo "%3$s". Este error puede haberlo producido algún problema con las unidades externas de almacenamiento o la unidad en %4$s. Por ejemplo: un CD-ROM o un DVD-ROM sucio o rayado, datos corruptos del disco duro o un problema de red mientras se descargaba el Asistente de instalación. (Los datos eran "%2$s" y el código de error era %1$d.)
+MediaError%dReading%sonDisk%s                 El Asistente de instalación no ha podido leer el archivo "%2$s". Este error puede haberlo producido algún problema con las unidades externas de almacenamiento o la unidad en %3$s. Por ejemplo: un CD-ROM o un DVD-ROM sucio o rayado, datos corruptos del disco duro o un problema de red mientras se descargaba el Asistente de instalación. (El código de error era %1$d.
+MovedFile%sTo%s                               Se ha movido el archivo "%1$s" a "%2$s".
+Name                                          Nombre:
+Next                                          &amp;Siguiente
+NoLanguagesInstalled                          La instalación no es válida, no se han encontrado idiomas instalados. Reinstala el juego.
+OK                                            &amp;Aceptar
+PatchMissingData%s                            No se puede aplicar el parche porque falta información de: "%1$s".
+PathTooLong                                   La ruta a un archivo es demasiado larga. Vuelve a intentarlo con una ruta más corta.
+PauseGoogleDesktopSearch                      La aplicación de búsqueda Google Desktop Search puede causar problemas a la hora de instalar productos de Blizzard. Detén o cierra Google Desktop Search antes de continuar con la instalación. Consulta http://desktop.google.com/support para obtener más información.
+PleaseInsertCD%s                              Introduce el CD con el nombre "%1$s."
+PreparingToInstall                            Preparando la instalación...
+Pretty_deDE                                   Alemán
+Pretty_enGB                                   Inglés (EU)
+Pretty_enUS                                   Inglés (EEUU)
+Pretty_esES                                   Español (EU)
+Pretty_esMX                                   Español Latinoamericano
+Pretty_frFR                                   Francés
+Pretty_koKR                                   Coreano
+Pretty_ruRU                                   Ruso
+Pretty_zhCN                                   Chino simplificado
+Pretty_zhTW                                   Chino tradicional
+RepairButton                                  Reparación...
+RequiredFile%sMissing                         Se necesita el archivo "%1$s" pero no se encuentra en el directorio de destino.
+RequiredFolder%sMissing                       Se necesita la carpeta  "%1$s" pero no se encuentra en el directorio de destino.
+ScrollToEnd                                   (Lee con atención este acuerdo. El botón Aceptar se activa cuando lees hasta el final.)
+SelectFolder                                  Seleccionar &amp;carpeta...
+Skip                                          Saltar
+Stop                                          Parar
+TryAgain                                      Probar de nuevo
+TryDownloadingAgain                           Quizás tengas que descargarte este archivo de nuevo.
+UnableToLoadData                              El Asistente de instalación no ha podido cargar un archivo necesario.
+UnableToOpenURL                               El Asistente de instalación no ha podido abrir una URL.
+UnableToStartUp                               No se ha podido iniciar el Asistente de instalación.
+UnknownExtension                              miscelánea
+UpdateRequiresLocale%sButYouHave%s            Esta actualización necesita la versión %1$s de este software. Ahora está instalada la versión %2$s.
+Uninstall                                     &amp;Desinstalar
+Uninstalled%s                                 %1$s se ha desinstalado correctamente.
+Uninstaller                                   Asistente de desinstalación
+UninstallFilesLeftBehindWarning               Puede que queden algunos archivos. ¿Continúas con la desinstalación de todas formas?
+Uninstalling                                  Desinstalando...
+UninstallWarning                              La desinstalación se ha completado con las siguientes advertencias: 
+WaitingForFileClose                           Esperando a que se cierren los archivos...
+Warning                                       Advertencia
+Win32_CancelInstall                           &amp;Cancelar instalación
+Win32_Confirmation                            Ubicación de la instalación
+Win32_CouldNotCreateAddRemoveProgramsEntry%s  No se ha podido crear una entrada en el panel de control de Agregar o quitar programas para "%1$s".
+Win32_CouldNotRemoveAddRemoveProgramsEntry%s  No se ha podido eliminar una entrada en el panel de control de Agregar o quitar programas para "%1$s".
+Win32_CreateShortcutOnDesktop                 Crear acceso directo en el escritorio
+Win32_DirectoryDoesNotExist                   Error: ese directorio no existe. 
+Win32_DirectoryExists                         Advertencia: ese directorio ya existe. 
+Win32_DirectoryNonEmpty                       Advertencia: ese directorio ya existe y contiene datos. 
+Win32_DirectX%sRequiredFor%s                  No tienes la versión necesaria de DirectX instalada en tu ordenador. %2$s necesita la versión %1$s in para funcionar. ¿Quieres instalar DirectX ahora?
+Win32_GenericRestartMessage                   Será necesario que reinicies el ordenador para que los cambios del nuevo software surtan efecto. ¿Quieres reiniciarlo ahora?
+Win32_InstallationDestinationDirectory        Directorio de instalación
+Win32_InstallTerminated                       Instalación cancelada:
+Win32_InvalidDirectory                        Error: el directorio elegido no es válido. 
+Win32_NoButContinueInstall                    &amp;No, pero continuar con la instalación
+Win32_NotEnoughSpace                          Error: no hay espacio libre suficiente en esta unidad. 
+Win32_PleaseChooseDirectory                   Elige un directorio para la instalación:
+Win32_RestartRequired                         Reinicia el equipo
+Win32_RestoreDefault                          Config. p&amp;redeterminada
+Win32_SpaceAvailable                          Espacio disponible:
+Win32_SpaceRequired                           Espacio necesario:
+Win32_SuccessfulInstall%sRestartMessage       Antes de jugar a %1$s, tienes que reiniciar tu ordenador. ¿Quieres reiniciarlo ahora?
+Win32_VistaFolderMove                         World of Warcraft está actualmente instalado en "%1$s". Blizzard recomienda mover esta instalación a una carpeta pública para evitar problemas al aplicar los parches. ¿Quieres que el Asistente de instalación mueva World of Warcraft durante el proceso de actualización?
+Win32_VistaProgramFilesWarning                Windows Vista restringe el acceso a la carpeta "Archivos de programa" que has seleccionado. La instalación dentro de esta carpeta puede provocar problemas al aplicar los parches. Blizzard recomienda instalar World of Warcraft dentro de una carpeta pública. ¿Estás seguro de que deseas instalarlo en "Archivos de programa"?
+Win32_YesInstallDirectX                       &amp;Sí, instalar DirectX
+</localization>

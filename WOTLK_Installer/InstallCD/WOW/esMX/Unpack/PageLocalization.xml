@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>                         
+<localization>
+
+WorldOfWarcraftInstaller                      Instalador de World of Warcraft
+
+Font                                          FrizQuadrata.ttf
+LanguageCode                                  LatinAmericanSpanish
+
+UnableToInstall                               No se puede instalar
+YouNeedToBeAnAdminUser                        Para instalar World of Warcraft necesitas entrar con cuenta de administrador.
+ClickHereForMoreInformation                   Haz clic aquí para obtener más |i|información
+NewerOperatingSystem1                         World of Warcraft necesita que tengas instalado
+NewerOperatingSystem2                         un sistema operativo más actualizado.
+WindowsRequiredOS                             Se necesita Windows 2000, XP o superior.
+MacOSXRequiredOS                              Se necesita Mac OS X 10.3.9 o superior.
+
+RestartRequired                               Es necesario reiniciar
+YouNeedToRestart1                             Antes de jugar a World of Warcraft,
+YouNeedToRestart2                             debes reiniciar el ordenador.
+
+FailedMinSpec1                                Tu ordenador no cumple con los
+FailedMinSpec2                                requisitos mínimos exigidos.
+NotEnoughRAM                                  No tienes suficiente memoria RAM (saber más)
+TooSlowCPU                                    Velocidad de CPU insuficiente (saber más)
+InstallAnyway                                 |I|nstalar igualmente
+
+ViewTheReadme                                 Ver el archivo |L|éeme
+ViewTheManual                                 Ver el |M|anual
+TechnicalSupport                              Asistencia |t|écnica
+ExitInstaller                                 S|a|lir del Instalador
+InstallWorldOfWarcraft                        Instalar |W|orld of Warcraft
+PlayWorldOfWarcraft                           |J|ugar a World of Warcraft
+Uninstall                                     |D|esinstalar
+ManualData                                    Support/Manual.pdf
+
+InstallationComplete                          Instalación finalizada.
+CreateAnAccount1                              Si eres un nuevo jugador de World of Warcraft, haz clic en 
+CreateAnAccount2                              Crear cuenta. Es necesaria una cuenta para poder jugar.
+CreateYourAccount                             |C|rear cuenta
+CreateYourAccountURL                          http://www.worldofwarcraft.com/es/
+HaveAnAccountAlready1                         Si ya tienes una cuenta, haz clic en el botón de abajo para
+HaveAnAccountAlready2                         iniciar World of Warcraft.
+
+Back                                          |A|trás
+Cancel                                        Cancelar
+
+DisplayedInstallerVersion                     3.0.1.8874
+
+InstalledVersion
+
+</localization>
