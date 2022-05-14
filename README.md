@@ -136,6 +136,7 @@ It also contains a hardcoded Dictionary that automatically sets the install inst
             ["XTEXTURES"] = "Data\\common.MPQ"
         };
 ```
+![installersyntax](https://i.imgur.com/e5vodA3.png)
 
 ### Disabling the create account popup.
 
