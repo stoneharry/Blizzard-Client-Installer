@@ -2,9 +2,9 @@
 
 The Blizzard Client Installer is a version of the Blizzard Updater that can install the full client, an expansion, or a minor update. It is a lot more heavyweight than other versions of the installer but has a lot more functionality.
 
-The UI is driven through XML files that define that layout. All images and audio are included. Dialog forms are embedded in the executable file. You can set and change the registry values it uses, the start menu and program data it creates, etc.
+The UI is driven through XML files that define the layout. All images and audio are included. Dialog forms are embedded in the executable file. You can set and change the registry values it uses, the start menu and program data it creates, etc.
 
-Using this I have created a ~12GB installer that can install a custom 3.3.5 WOTLK client. The reason my client is smaller is because the Blizzlike client actually has a lot of duplicated files stored in the MPQ archives because old versions of the files exist in some MPQs with a lower load priority.
+Using this I have created a ~12GB installer that can install a custom 3.3.5 WOTLK client. My client is smaller than the Blizzlike client because the Blizzlike client actually has a lot of duplicated files stored in the MPQ archives, because old versions of some files exist in MPQs with a lower load order.
 
 ![installer1](https://i.imgur.com/T44lxdv.png)
 ![installer2](https://i.imgur.com/ZmiKADz.png)
