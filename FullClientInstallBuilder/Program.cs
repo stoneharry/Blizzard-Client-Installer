@@ -1,5 +1,7 @@
 ﻿
 
+using System.Diagnostics;
+
 namespace FullClientInstallBuilder
 {
     public class Program
@@ -12,12 +14,12 @@ namespace FullClientInstallBuilder
             ["Creature"] = "Data\\lichking.MPQ",
             ["Data"] = "Data\\{ProductLocaleCode}\\base-{ProductLocaleCode}.mpq",
             ["DBFilesClient"] = "Data\\{ProductLocaleCode}\\patch-{ProductLocaleCode}.MPQ",
-            ["DUNGEONS"] = "Data\\patch-2.MPQ",
+            ["DUNGEONS"] = "Data\\expansion.MPQ",
             ["Environments"] = "Data\\patch-2.MPQ",
             ["Fonts"] = "Data\\common.MPQ",
             ["Interface"] = "Data\\{ProductLocaleCode}\\locale-{ProductLocaleCode}.MPQ",
             ["Interiors"] = "Data\\patch-2.MPQ",
-            ["ITEM"] = "Data\\patch-3.MPQ",
+            ["ITEM"] = "Data\\common-2.MPQ",
             ["PARTICLES"] = "Data\\common.MPQ",
             ["shaders"] = "Data\\common.MPQ",
             ["Sound"] = "Data\\{ProductLocaleCode}\\speech-{ProductLocaleCode}.MPQ",
@@ -26,7 +28,7 @@ namespace FullClientInstallBuilder
             ["TEST"] = "Data\\patch.MPQ",
             ["textures"] = "Data\\patch-2.MPQ",
             ["TILESET"] = "Data\\patch-2.MPQ",
-            ["World"] = "Data\\patch-2.MPQ",
+            ["World"] = "Data\\expansion.MPQ",
             ["WTF"] = "Data\\common.MPQ",
             ["XTEXTURES"] = "Data\\common.MPQ"
         };
@@ -45,11 +47,17 @@ namespace FullClientInstallBuilder
 
             Console.WriteLine("Finding files...");
 
+            var fileParseTimer = new Stopwatch();
+            var installTimer = new Stopwatch();
+
+            fileParseTimer.Start();
             var fileList = new List<FileEntry>();
             BuildFileList(sourceDir.Length, sourceDir, ref fileList);
+            fileParseTimer.Stop();
 
-            Console.WriteLine($"Found {fileList.Count} files.");
+            Console.WriteLine($"Found {fileList.Count} files in {fileParseTimer.Elapsed.ToString(@"m\:ss")}");
 
+            installTimer.Start();
             new InstallManager()
                 .SourceDir(sourceDir)
                 .TargetDir(targetDir)
@@ -58,8 +66,9 @@ namespace FullClientInstallBuilder
                 .PackageLookup(DirectoryPackageLookup)
                 .NumThreads(numThreads)
                 .RunInstall(fileList);
+            installTimer.Stop();
 
-            Console.WriteLine("Done.");
+            Console.WriteLine($"Done, completed MPQ writes in {installTimer.Elapsed.ToString(@"m\:ss")}");
         }
 
         static void BuildFileList(int rootDirLength, string sourceDir, ref List<FileEntry> fileList)

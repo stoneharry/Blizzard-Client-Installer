@@ -86,6 +86,7 @@ namespace FullClientInstallBuilder
                     pass = new MpqPass($"{targetDir}{archivePrefix}{archiveIndex}.mpq", sourceDir, $"{archivePrefix}{archiveIndex}.mpq", _PackageLookup);
                 }
             }
+            passes.Add(pass);
 
             Console.WriteLine($"Creating {passes.Count} installer tome MPQs with {NumThreads} threads...");
 
